@@ -1,0 +1,11 @@
+.icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 27px 45px;
+}
+
+.icon {
+  width: 2.9em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
