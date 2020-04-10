@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Blog.css";
+import { Link } from "react-router-dom";
 
 function Blog() {
   const [posts, setPosts] = useState<[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [years, setYears] = useState<[]>([]);
+
+  const findUniqueYears = (posts: any) => {
+    const years = posts.map((post: any) => post.date.substring(0, 4));
+    const uniqueYears: any = Array.from(new Set(years));
+    setYears(uniqueYears);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +24,9 @@ function Blog() {
         }
       }).then(res =>
         res.json().then(res => {
+          findUniqueYears(res);
           setPosts(res);
+
           setLoading(false);
         })
       );
@@ -38,15 +48,29 @@ function Blog() {
         <h2>blog</h2>
       </span>
       <section>
-        <ul>
-          {posts.map((post: any) => (
-            <li key={post._id}>
-              <a href={`${post.slug}`}>
-                {post.date}: {post.title}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {years.map(year => (
+          <div key={year}>
+            <h3>{year}</h3>
+            <ul>
+              {posts
+                .filter((post: any) => post.date.substring(0, 4) === year)
+                .map((post: any) => (
+                  <li key={post._id}>
+                    <Link
+                      to={{
+                        pathname: `/blog/${post.date}/${post.slug}`,
+                        state: {
+                          post: post
+                        }
+                      }}
+                    >
+                      {post.title}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        ))}
       </section>
     </>
   );

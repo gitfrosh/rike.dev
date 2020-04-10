@@ -7,17 +7,17 @@ function Nav() {
   return (
     <header>
     <nav>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+      <a aria-current={segment === undefined ? 'page' : undefined} href="/">
         home
       </a>
-      <a aria-current={segment === 'projects' ? 'page' : undefined} href="projects">
+      <a aria-current={segment === 'projects' ? 'page' : undefined} href="/projects">
         projects
       </a>
 
       
       <a
         aria-current={segment === 'blog' ? 'page' : undefined}
-        href="blog">
+        href="/blog">
         blog
       </a>
     </nav>
