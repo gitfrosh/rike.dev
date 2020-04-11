@@ -1,4 +1,5 @@
 body {
+  font-size: 13px;
   height: 95%;
   width: 100%;
   font-family: open sans, sans-serif;
@@ -15,7 +16,7 @@ h2 {
   font-size: 23px;
 }
 
-p {
+p, li {
   font-size: 13px;
   color: #242424;
   line-height: 2;
@@ -41,7 +42,7 @@ a:focus {
 
 .title {
   display: block;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .title h2 {

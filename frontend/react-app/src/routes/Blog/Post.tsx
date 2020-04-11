@@ -10,6 +10,8 @@ function Post(props: any) {
     <>
     <Breadcrumb />
       <h2>{post.title}</h2>
+      <p className="date">{post.date}</p>
+
       <section>
         <Markdown>{post.html}</Markdown>
       </section>

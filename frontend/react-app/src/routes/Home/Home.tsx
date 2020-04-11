@@ -8,7 +8,7 @@ function Home() {
         <h2>rike.dev</h2>
         <p>web development & beyond</p>
       </span>
-      <section>
+      <section className="text">
         <p>
           Hi, I'm ulrike (or just rike) and I am a software developer from
           Berlin with a focus on web technologies including · JavaScript ·

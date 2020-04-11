@@ -10,7 +10,7 @@ function Blog() {
   const findUniqueYears = (posts: any) => {
     const years = posts.map((post: any) => post.date.substring(0, 4));
     const uniqueYears: any = Array.from(new Set(years));
-    setYears(uniqueYears);
+    setYears(uniqueYears.reverse() );
   };
 
   useEffect(() => {
@@ -34,13 +34,6 @@ function Blog() {
     fetchData();
   }, []);
 
-  if (loading) {
-    return (
-      <div className="spinner-border" role="status">
-        <span className="sr-only">Loading...</span>
-      </div>
-    );
-  }
 
   return (
     <>
@@ -54,6 +47,15 @@ function Blog() {
             <ul>
               {posts
                 .filter((post: any) => post.date.substring(0, 4) === year)
+                .sort((a: any, b: any) => {
+                  if (a.date > b.date) {
+                    return -1;
+                }
+                if (b.date > a.date) {
+                    return 1;
+                }
+                return 0;
+                })
                 .map((post: any) => (
                   <li key={post._id}>
                     <Link
