@@ -2,6 +2,7 @@ version: '3'
 
 services:
   strapi:
+    container_name: strapi
     image: strapi/strapi
     environment:
       DATABASE_CLIENT: mongo
@@ -18,6 +19,7 @@ services:
       - '1337:1337'
 
   mongo:
+    container_name: mongo
     image: mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: strapi
@@ -28,5 +30,63 @@ services:
       - '27017:27017'
 
 
-# frontend:
-#   container_name: frontend
+  frontend:
+    # build:
+    #     context: .
+    #     dockerfile: Dockerfile
+    image: node
+    restart: unless-stopped
+    links:
+      - strapi:strapi
+    environment:
+        - PORT=3001
+        - NODE_ENV=production
+    ports:
+        - 3001:3001
+    command: "npm run prod"
+    working_dir: /var/www/public_html/rike.dev
+
+    volumes:
+      - ./frontend/next-app:/var/www/public_html/rike.dev
+
+
+    # image: "node:8"
+    # user: "node"
+    # working_dir: /home/node/app
+    # environment:
+    #   - NODE_ENV=production
+
+    # expose:
+    #   - "8081"
+
+
+
+  #       nodejs:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   image: nodejs
+  #   container_name: nodejs
+  #   restart: unless-stopped
+  #   env_file: .env
+  #   environment:
+  #     - MONGO_USERNAME=$MONGO_USERNAME
+  #     - MONGO_PASSWORD=$MONGO_PASSWORD
+  #     - MONGO_HOSTNAME=db
+  #     - MONGO_PORT=$MONGO_PORT
+  #     - MONGO_DB=$MONGO_DB 
+  #   ports:
+  #     - "80:8080"
+  #   volumes:
+  #     - .:/home/node/app
+  #     - node_modules:/home/node/app/node_modules
+  #   networks:
+  #     - app-network
+  #   command: ./wait-for.sh db:27017 -- /home/node/app/node_modules/.bin/nodemon app.js    # image: "node:8"
+    # user: "node"
+    # working_dir: /home/node/app
+    # environment:
+    #   - NODE_ENV=production
+
+    # expose:
+    #   - "8081"
