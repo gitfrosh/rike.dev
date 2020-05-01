@@ -1,7 +1,7 @@
-import MyHead from "../../components/MyHead";
-import Layout from "../../components/Layout";
-import fetch from "node-fetch";
+import MyHead from "../../../../components/MyHead";
+import Layout from "../../../../components/Layout";
 import Markdown from "markdown-to-jsx";
+import fetchPosts from "../../../../helpers/api";
 
 const Post = ({ post }) => {
   const handleClick = e => {
@@ -27,9 +27,13 @@ const Post = ({ post }) => {
           </p>
         </section>
         <div className="button">
-        <button title="Back to top" className="scroll-up" onClick={handleClick}>
-          <span>&#9652;</span>
-        </button>
+          <button
+            title="Back to top"
+            className="scroll-up"
+            onClick={handleClick}
+          >
+            <span>&#9652;</span>
+          </button>
         </div>
       </Layout>
 
@@ -59,19 +63,11 @@ const Post = ({ post }) => {
             text-align: center;
             vertical-align: middle;
             overflow: hidden;
-            transition: .4s;
+            transition: 0.4s;
           }
 
           .button button:hover {
             opacity: 0.7;
-          }
-
-          .intro {
-            color: dimgray;
-            font-size: 85%;
-            position: relative;
-            padding-left: 1em;
-            border-left: 0.2em solid #4d91b3;
           }
 
           h2 {
@@ -89,10 +85,6 @@ const Post = ({ post }) => {
           h4 {
             font-size: 15px;
           }
-          h5 {
-            margin-top: 20px;
-            font-size: 14px;
-          }
         `}
       </style>
     </>
@@ -102,20 +94,18 @@ const Post = ({ post }) => {
 // This function gets called at build time
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch("http://strapi:1337/posts", {
-    method: "GET",
-    headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlOGNlMTNlMjQwNmMzMDA4NTRiMTQzMSIsImlhdCI6MTU4NjI5MjAxMSwiZXhwIjoxNTg4ODg0MDExfQ.Wicl1PfLf1tWG6Dq8c6SjjtKoj78yX0qOM76HyGryWA",
-      "Content-Type": "application/json"
-    }
-  });
-  const posts = await res.json();
+  const posts = await fetchPosts();
 
   // Get the paths we want to pre-render based on posts
   const paths = posts.map(post => ({
-    params: { slug: post.slug, date: post.date }
+    params: {
+      slug: post.slug,
+      year: post.year,
+      month: post.month,
+      day: post.day
+    }
   }));
+  console.log(paths)
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
@@ -126,15 +116,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch("http://strapi:1337/posts", {
-    method: "GET",
-    headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlOGNlMTNlMjQwNmMzMDA4NTRiMTQzMSIsImlhdCI6MTU4NjI5MjAxMSwiZXhwIjoxNTg4ODg0MDExfQ.Wicl1PfLf1tWG6Dq8c6SjjtKoj78yX0qOM76HyGryWA",
-      "Content-Type": "application/json"
-    }
-  });
-  const posts = await res.json();
+  const posts = await fetchPosts();
 
   const post = posts.filter(post => post.slug === params.slug)[0];
   // Pass post data to the page via props

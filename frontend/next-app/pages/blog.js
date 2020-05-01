@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 import Link from "next/link";
 import MyHead from "./../components/MyHead";
 import Layout from "./../components/Layout";
+import fetchPosts from "../helpers/api";
 
 // posts will be populated at build time by getStaticProps()
 
@@ -33,7 +34,7 @@ function Blog({ posts, years }) {
                   .map(post => (
                     <li key={post._id}>
                       <Link prefetch={false}
-                        href={`/[date]/[post]`}
+                        href={`/[year]/[month]/[day]/[post]`}
                         as={`/${post.date}/${post.slug}`}
                         passHref
                       >
@@ -55,17 +56,11 @@ function Blog({ posts, years }) {
 // direct database queries. See the "Technical details" section.
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
-  const res = await fetch("http://strapi:1337/posts", {
-    method: "GET",
-    headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlOGNlMTNlMjQwNmMzMDA4NTRiMTQzMSIsImlhdCI6MTU4NjI5MjAxMSwiZXhwIjoxNTg4ODg0MDExfQ.Wicl1PfLf1tWG6Dq8c6SjjtKoj78yX0qOM76HyGryWA",
-      "Content-Type": "application/json"
-    }
-  });
-  const posts = await res.json();
+  const posts = await fetchPosts();
+  // console.log(posts)
+
   const years = Array.from(
-    new Set(posts.map(post => post.date.substring(0, 4)))
+    new Set(posts && posts.map(post => post.date.substring(0, 4)))
   ).reverse();
   return {
     props: {

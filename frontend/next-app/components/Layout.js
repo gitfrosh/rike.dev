@@ -33,6 +33,18 @@ const Layout = props => (
         h3 {
           font-size: 16px;
         }
+        h5 {
+          margin-top: 20px !important;
+          font-size: 14px !important;
+        }
+
+        .intro, .outro {
+          color: dimgray;
+          font-size: 85%;
+          position: relative;
+          padding-left: 1em;
+          border-left: 0.2em solid #4d91b3;
+        }
 
         p,
         li {
