@@ -35,6 +35,7 @@ const Layout = props => (
         }
         h5 {
           margin-top: 20px !important;
+          line-height: 20px;
           font-size: 14px !important;
         }
 
