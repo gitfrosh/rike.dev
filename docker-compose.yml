@@ -17,8 +17,6 @@ services:
       - ./strapi:/srv/app
     ports:
       - '1337:1337'
-    expose: [1337]
-
 
   mongo:
     container_name: mongo
@@ -41,7 +39,6 @@ services:
         - NODE_ENV=production
     ports:
         - 3003:3003
-    expose: [3003]
     command: "npm run prod"
     working_dir: /var/www/public_html/rike.dev
 

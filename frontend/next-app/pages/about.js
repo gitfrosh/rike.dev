@@ -13,14 +13,10 @@ function About() {
 
           </span>
           <section>
-              Information in accordance with Section 5 TMG
+              Contact
               <br />
               <br />
               Ulrike Exner
-              <br />
-              Wichertstr. 30a
-              <br />
-              10439 Berlin
               <br />
               E-Mail: <a href="mailto:hello@rike.dev">hello@rike.dev</a>
               <br />

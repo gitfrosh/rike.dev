@@ -9,7 +9,7 @@ function Projects() {
       <>
       <span className="title">
         <h2>projects</h2>
-        <p>my favourites: own or collaborative work</p>
+        <p>favourite own or collaborative work</p>
 
       </span>
       <section>

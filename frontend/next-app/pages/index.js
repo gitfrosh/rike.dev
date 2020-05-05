@@ -1,5 +1,6 @@
 import MyHead from "./../components/MyHead";
 import Layout from "./../components/Layout";
+import Link from "next/link";
 
 function HomePage() {
   return (
@@ -34,14 +35,9 @@ function HomePage() {
                 Informatica Feminale
               </a> in Bremen to inspire more women to get into web development.
               Sometimes I produce audio podcasts for scientific purposes and I
-              like <a
-                className="fancy-link"
-                target="_blank"
-                href="https://rike.dev"
-                rel="noopener noreferrer"
-              >
+              like <Link href="/blog">
                 writing
-              </a>
+              </Link>
               . If you'd like to connect, do not hesitate to drop a line! <br />
             </p>
           </section>
@@ -105,6 +101,8 @@ function HomePage() {
         .icon {
           width: 1.8em;
           padding: 0.5em 0.5em 0.5em 0.5em;
+          box-shadow: unset;
+          border: unset;
         }
 
         @media only screen and (max-width: 767px) {

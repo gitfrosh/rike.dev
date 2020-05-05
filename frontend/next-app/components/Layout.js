@@ -15,7 +15,7 @@ const Layout = props => (
       {`
         body {
           font-size: 13px;
-          height: 95%;
+          height: 100vH;
           width: 100%;
           font-family: open sans, sans-serif;
           -webkit-font-smoothing: antialiased;
