@@ -24,6 +24,15 @@ const Layout = props => (
           background: lightgray url("/img/21989.jpg") repeat;
         }
 
+        pre, pre > p {
+          white-space: pre-wrap;       
+          white-space: -moz-pre-wrap;  
+          white-space: -pre-wrap;      
+          white-space: -o-pre-wrap;    
+          word-wrap: break-word;   
+          font-size: 11px;
+        }
+
         h1 {
           font-size: 70px;
         }
@@ -35,7 +44,7 @@ const Layout = props => (
         }
         h5 {
           margin-top: 20px !important;
-          line-height: 20px;
+          line-height: 23px;
           font-size: 14px !important;
         }
 
@@ -48,7 +57,7 @@ const Layout = props => (
         }
 
         p,
-        li {
+        li, section {
           font-size: 12px;
           color: #242424;
           line-height: 2;
@@ -56,12 +65,13 @@ const Layout = props => (
 
         img {
           max-width: 100%;
+          height: auto;
           padding: 5px;
           border: solid 1px #ddd;
           border: solid 1px #CCC;
           -moz-box-shadow: 1px 1px 5px #999;
           -webkit-box-shadow: 1px 1px 5px #999;
-              box-shadow: 1px 1px 5px #999;
+          box-shadow: 1px 1px 5px #999;
         }
 
         code {

@@ -13,7 +13,6 @@ function About() {
 
           </span>
           <section>
-            <p>
               Information in accordance with Section 5 TMG
               <br />
               <br />
@@ -67,7 +66,6 @@ function About() {
               are only allowed for private use. The materials from these pages
               are copyrighted and any unauthorized use may violate copyright
               laws.
-            </p>
           </section>
         </>
       </Layout>

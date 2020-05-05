@@ -38,7 +38,7 @@ function Blog({ posts, years }) {
                         as={`/${post.date}/${post.slug}`}
                         passHref
                       >
-                        <a {...post}>{post.title}</a>
+                        <a>{post.title}</a>
                       </Link>
                     </li>
                   ))}
