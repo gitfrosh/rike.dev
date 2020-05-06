@@ -1,20 +1,7 @@
-import fetch from "node-fetch";
-
-let strapi_host = "localhost";
-if (process.env.NODE_ENV === "production") {
-  strapi_host = "strapi";
-}
+import {posts} from './posts';
 
 export default async function fetchPosts() {
-  const res = await fetch(`http://${strapi_host}:1337/posts`, {
-    method: "GET",
-    headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlOGNlMTNlMjQwNmMzMDA4NTRiMTQzMSIsImlhdCI6MTU4NjI5MjAxMSwiZXhwIjoxNTg4ODg0MDExfQ.Wicl1PfLf1tWG6Dq8c6SjjtKoj78yX0qOM76HyGryWA",
-      "Content-Type": "application/json"
-    }
-  });
-  let posts = await res.json();
+
   //   console.log(posts);
   posts.forEach(post => {
     post.date = post.date.replace(/-/g, "/");
