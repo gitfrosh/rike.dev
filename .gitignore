@@ -4,3 +4,4 @@ frontend/wp-xml-export
 frontend/next-app/node_modules
 frontend/next-app/.next
 frontend/next-app/out
+wp-backup/public_html
