@@ -22,6 +22,12 @@ const Layout = props => (
           font-smoothing: antialiased;
           text-align: center;
           background: lightgray url("/img/21989.jpg") repeat;
+          display: table;
+        }
+
+        #__next {
+          display: table-cell;
+          vertical-align: middle;
         }
 
         pre, pre > p {
