@@ -8,7 +8,7 @@ function About() {
       <Layout>
         <>
           <span className="title">
-            <h2>about</h2>
+            <h1>about</h1>
             <p>legal notice</p>
 
           </span>

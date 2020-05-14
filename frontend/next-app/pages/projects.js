@@ -8,7 +8,7 @@ function Projects() {
       <Layout>
       <>
       <span className="title">
-        <h2>projects</h2>
+        <h1>projects</h1>
         <p>favourite own or collaborative work</p>
 
       </span>

@@ -13,7 +13,7 @@ function Blog({ posts, years }) {
       <MyHead title={"Blog"} />
       <Layout>
         <span className="title">
-          <h2>blog</h2>
+          <h1>blog</h1>
         </span>
         <section>
           {years.map(year => (

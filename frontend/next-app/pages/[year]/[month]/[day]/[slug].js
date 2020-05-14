@@ -16,7 +16,7 @@ const Post = ({ post }) => {
   return (
     <>
       {/* <Breadcrumb /> */}
-      <MyHead title={"Blog"} />
+      <MyHead title={`Blog - ${post.title}`} />
       <Layout>
         <h2>{post.title}</h2>
         <p className="date">{post.date}</p>

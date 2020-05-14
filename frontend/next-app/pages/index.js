@@ -9,7 +9,7 @@ function HomePage() {
       <Layout>
         <>
           <span className="title">
-            <h2>rike.dev</h2>
+            <h1>rike.dev</h1>
             <p>web development & beyond</p>
           </span>
           <section className="text">
