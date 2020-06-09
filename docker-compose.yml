@@ -1,10 +1,31 @@
 version: '3'
 
 services:
+
+  minako:
+    image: node
+    restart: unless-stopped
+    environment:
+        - CMS_PORT=1340
+        - NODE_ENV=production
+        - SECRET=my_super_safe_secret
+        - PASSWORD=my_super_safe_password
+        - USERNAME=admin
+    ports:
+        - 1340:1340
+    expose: [1340]
+    command: bash -c "npm install && npm run build && npm run prod" 
+    working_dir: /var/www/public_html/minako
+
+    volumes:
+        - ./minako:/var/www/public_html/minako/
+
   # strapi:
   #   container_name: strapi
   #   image: strapi/strapi
   #   environment:
+  #     HOST: 172.21.0.4
+  #     STRAPI_HOST: 172.21.0.4
   #     DATABASE_CLIENT: mongo
   #     DATABASE_NAME: strapi
   #     DATABASE_HOST: mongo
@@ -17,7 +38,7 @@ services:
   #     - ./strapi:/srv/app
   #   ports:
   #     - '1337:1337'
-  #   command: "npm run prod"
+  #   command: bash -c "npm install && NODE_OPTIONS=--max_old_space_size=8192 npm run prod" 
 
 
   # mongo:
@@ -35,6 +56,7 @@ services:
     image: node
     restart: unless-stopped
     environment:
+        - CMS_PORT=1340
         - PORT=3003
         - NODE_ENV=production
     ports:
