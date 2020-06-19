@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const MyHead = ({ title }) => (
+const MyHead = ({ title, description }) => (
   <Head>
     <title>{`rike.dev - ${title}`}</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -9,7 +9,7 @@ const MyHead = ({ title }) => (
     <meta http-equiv="Pragma" content="cache" />
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta http-equiv="content-Language" content="en" />
-    <meta name="description" content="Web development & beyond" />
+    <meta name="description" content={description} />
     <meta name="keywords" content="web development react nodejs python javascript frontend backend" />
     <meta name="author" content="Ulrike Exner" />
     <meta name="revisit-after" content="2 days" />

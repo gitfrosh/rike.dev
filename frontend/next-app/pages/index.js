@@ -5,7 +5,7 @@ import Link from "next/link";
 function HomePage() {
   return (
     <div>
-      <MyHead title={"Home"} />
+      <MyHead description={"web development & beyond"} title={"home"} />
       <Layout>
         <>
           <span className="title">

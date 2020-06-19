@@ -4,19 +4,21 @@ import Markdown from "markdown-to-jsx";
 import fetchPosts from "../../../../helpers/api";
 
 const Post = ({ post }) => {
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.preventDefault();
-    console.log("rfs");
     window.scrollTo({
       top: 0,
       left: 100,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
   return (
     <>
       {/* <Breadcrumb /> */}
-      <MyHead title={`Blog - ${post.title}`} />
+      <MyHead
+        description={post && post.html.substring(0, 100)}
+        title={`blog - ${post.title}`}
+      />
       <Layout>
         <h2>{post.title}</h2>
         <p className="date">{post.date}</p>
@@ -97,15 +99,15 @@ export async function getStaticPaths() {
   const posts = await fetchPosts();
 
   // Get the paths we want to pre-render based on posts
-  const paths = posts.map(post => ({
+  const paths = posts.map((post) => ({
     params: {
       slug: post.slug,
       year: post.year,
       month: post.month,
-      day: post.day
-    }
+      day: post.day,
+    },
   }));
-  console.log(paths)
+  console.log(paths);
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
@@ -118,7 +120,7 @@ export async function getStaticProps({ params }) {
   // If the route is like /posts/1, then params.id is 1
   const posts = await fetchPosts();
 
-  const post = posts.filter(post => post.slug === params.slug)[0];
+  const post = posts.filter((post) => post.slug === params.slug)[0];
   // Pass post data to the page via props
   return { props: { post } };
 }

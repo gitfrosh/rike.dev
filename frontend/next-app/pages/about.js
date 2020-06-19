@@ -4,7 +4,7 @@ import MyHead from "./../components/MyHead";
 function About() {
   return (
     <div>
-      <MyHead title={"Legal Notice"} />
+      <MyHead description={"legal notice for rike.dev"} title={"legal notice"} />
       <Layout>
         <>
           <span className="title">
@@ -18,7 +18,7 @@ function About() {
               <br />
               Ulrike Exner
               <br />
-              E-Mail: <a href="mailto:hello@rike.dev">hello@rike.dev</a>
+              E-Mail: <a href="mailto:hello@rike.dev">hello(*at*)rike.dev</a>
               <br />
               Internet address:{" "}
               <a href="https://rike.dev" target="_blank">

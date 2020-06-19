@@ -10,18 +10,21 @@ import fetchPosts from "../helpers/api";
 function Blog({ posts, years }) {
   return (
     <>
-      <MyHead title={"Blog"} />
+      <MyHead
+        description={"a blog about web development and beyond"}
+        title={"blog"}
+      />
       <Layout>
         <span className="title">
           <h1>blog</h1>
         </span>
         <section>
-          {years.map(year => (
+          {years.map((year) => (
             <div key={year}>
               <h3>{year}</h3>
               <ul>
                 {posts
-                  .filter(post => post.date.substring(0, 4) === year)
+                  .filter((post) => post.date.substring(0, 4) === year)
                   .sort((a, b) => {
                     if (a.date > b.date) {
                       return -1;
@@ -31,9 +34,10 @@ function Blog({ posts, years }) {
                     }
                     return 0;
                   })
-                  .map(post => (
+                  .map((post) => (
                     <li key={post._id}>
-                      <Link prefetch={false}
+                      <Link
+                        prefetch={false}
                         href={`/[year]/[month]/[day]/[post]`}
                         as={`/${post.date}/${post.slug}`}
                         passHref
@@ -60,13 +64,13 @@ export async function getStaticProps() {
   // console.log(posts)
 
   const years = Array.from(
-    new Set(posts && posts.map(post => post.date.substring(0, 4)))
+    new Set(posts && posts.map((post) => post.date.substring(0, 4)))
   ).reverse();
   return {
     props: {
       posts: posts,
-      years: years
-    }
+      years: years,
+    },
   };
 }
 
