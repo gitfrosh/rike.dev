@@ -97,7 +97,7 @@ function Nav() {
         }
 
         #menuToggle {
-          margin-bottom: 20px;
+          margin-bottom: 40px;
           display: block;
           position: relative;
           top: 20px;

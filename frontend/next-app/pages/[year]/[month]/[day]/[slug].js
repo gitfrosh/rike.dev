@@ -45,8 +45,13 @@ const Post = ({ post }) => {
             text-transform: uppercase;
             letter-spacing: 1px;
             color: lightslategray;
-            font-size: 10px;
             font-weight: 100;
+          }
+
+          @media only screen and (max-width: 765px) {
+            p {
+              font-size: 12px;
+            }
           }
 
           .button {
@@ -73,7 +78,8 @@ const Post = ({ post }) => {
           }
 
           h2 {
-            font-size: 16px;
+            font-size: 17px;
+            font-weight: bold;
             line-height: 25px;
             letter-spacing: 0.5px;
             margin-bottom: -3px;
