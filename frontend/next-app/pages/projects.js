@@ -26,7 +26,7 @@ function Projects() {
             <p className="project-info">
               <b>minako</b> is a super lightweight headless, API-first,
               flat-file cms written in Node.js/Next.js made for blogs and other
-              small content-driven frontends.
+              small content-driven frontends.{" "}
               <em>
                 <a href="https://github.com/gitfrosh/minako">Link</a>
               </em>

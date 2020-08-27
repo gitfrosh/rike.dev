@@ -10,6 +10,7 @@ const MyHead = ({ title, description }) => (
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta http-equiv="content-Language" content="en" />
     <meta name="description" content={description} />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet" />
     <meta name="keywords" content="web development react nodejs python javascript frontend backend" />
     <meta name="author" content="Ulrike Exner" />
     <meta name="revisit-after" content="2 days" />

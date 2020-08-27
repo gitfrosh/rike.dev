@@ -14,14 +14,14 @@ const Layout = props => (
     <style jsx global>
       {`
         body {
-          font-size: 13px;
           height: 100vH;
           width: 100%;
-          font-family: open sans, sans-serif;
+          font-family: 'Roboto Mono', monospace;
           -webkit-font-smoothing: antialiased;
           font-smoothing: antialiased;
           text-align: center;
-          background: lightgray url("/img/21989.jpg") repeat;
+          background: #fff;
+          // background: lightgray url("/img/21989.jpg") repeat;
           display: table;
         }
 
@@ -64,7 +64,7 @@ const Layout = props => (
 
         p,
         li, section {
-          font-size: 12px;
+          font-size: 16px;
           color: #242424;
           line-height: 2;
         }
@@ -108,6 +108,7 @@ const Layout = props => (
           letter-spacing: 18px;
         }
         .title p {
+          font-family: 'Roboto', sans-serif;
           font-size: 12px;
           text-transform: uppercase;
           color: #aaa;
@@ -146,8 +147,9 @@ const Layout = props => (
       }
       .wrapper-io {
         background-color: #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 1px solid lightgrey;
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        //   0 6px 20px 0 rgba(0, 0, 0, 0.19);
         width: 100%;
         position: relative;
       }

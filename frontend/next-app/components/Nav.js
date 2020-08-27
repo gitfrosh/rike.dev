@@ -4,6 +4,7 @@ import styled from "styled-components";
 const StyledLink = styled.a`
   display: inline-block;
   color: #242424;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   margin-right: 30px;
   padding: 5px;
