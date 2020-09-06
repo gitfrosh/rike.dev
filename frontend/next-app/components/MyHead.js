@@ -16,7 +16,7 @@ const MyHead = ({ title, description }) => (
     <meta name="revisit-after" content="2 days" />
     <title>rike.dev - Web development & beyond</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/font.css" />
+    {/* <link rel="stylesheet" href="/css/font.css" /> */}
   </Head>
 );
 

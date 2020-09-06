@@ -64,7 +64,7 @@ const Layout = props => (
 
         p,
         li, section {
-          font-size: 16px;
+          font-size: 14px;
           color: #242424;
           line-height: 2;
         }
@@ -117,6 +117,18 @@ const Layout = props => (
         }
 
         @media only screen and (max-width: 767px) {
+          h1 {
+            font-size: 40px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          p,
+          li, section {
+            font-size: 12px;
+            color: #242424;
+            line-height: 2;
+          }
           .title {
             margin-bottom: 50px;
           }

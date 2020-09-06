@@ -5,7 +5,7 @@ const StyledLink = styled.a`
   display: inline-block;
   color: #242424;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16.5px !important;
   margin-right: 30px;
   padding: 5px;
   cursor: pointer;
@@ -14,7 +14,7 @@ const StyledLink = styled.a`
     font-size: 15px;
   }
   @media only screen and (max-width: 480px) {
-    font-size: 12px;
+    font-size: 25px !important;
   }
 `;
 
@@ -172,8 +172,8 @@ function Nav() {
 
         #menu {
           position: absolute;
-          width: 100%;
-          margin: -100px 0 0 -60px;
+          width: 110%;
+          margin: -110px 0 0 -80px;
           padding: 50px;
           padding-top: 125px;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
