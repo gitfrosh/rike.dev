@@ -9,22 +9,15 @@ function HomePage() {
       <Layout>
         <>
           <span className="title">
-            <h1>rike.dev</h1>
-            <p>web development & beyond</p>
+            <h1>Hi there</h1>
           </span>
           <section className="text">
             <p>
-              Hi, I'm ulrike (or just rike) and I am a software developer from
+              I'm ulrike (or just rike) and I am a software developer from
               Berlin with a focus on web technologies including · JavaScript ·
-              Node.js · HTML5 · CSS3 · React.js · Vue.js · Redux . GraphQL ·
+              Node.js · HTML5 · CSS3 · React · Vue.js · Redux . GraphQL ·
               Django · Flask · PostgreSQL · MongoDB and others. I hold a
-              Master's degree in computer science from <a
-                target="_blank"
-                href="http://osmi.th-brandenburg.de/"
-                rel="noopener noreferrer"
-              >
-                Brandenburg University of Applied Sciences
-              </a> and I have worked as online content manager, librarian and
+              Master's degree in computer science and I have worked as online content manager, librarian and
               freelance web developer. Annually, I give talks for beginners in
               web development at <a
                 target="_blank"
