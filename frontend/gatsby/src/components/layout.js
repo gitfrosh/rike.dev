@@ -1,26 +1,35 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import base from './base.css'
-import Container from './container'
-import Navigation from './navigation'
+import React, { Fragment } from 'react'
+import Header from '../blocks/header/Header';
+import Footer from '../blocks/footer/Footer';
+import "fontsource-roboto-mono" 
+import "fontsource-roboto"
+import './assets/sass/style.scss';
 
-class Template extends React.Component {
+class Layout extends React.Component {
   render() {
     const { location, children } = this.props
-    let header
+    // let header
 
-    let rootPath = `/`
+    // let rootPath = `/`
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
     return (
-      <Container>
-        <Navigation />
-        {children}
-      </Container>
+      <Fragment>
+
+      <Header />
+
+      <main id="main" className="site-main">
+{children}
+      </main>
+
+      <Footer />
+  </Fragment>
+  
+
     )
   }
 }
 
-export default Template
+export default Layout
