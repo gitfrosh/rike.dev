@@ -2,6 +2,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+console.log(process.env)
+
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
@@ -28,7 +30,6 @@ module.exports = {
     title: 'rike.dev - Web development and beyond',
     siteUrl: `https://rike.dev`,
   },
-  pathPrefix: '/gatsby-contentful-starter',
   plugins: [
     'gatsby-plugin-sitemap',
     'gatsby-transformer-remark',

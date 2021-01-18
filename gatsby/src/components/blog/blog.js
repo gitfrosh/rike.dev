@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Blog = ({ posts }) => {
-    const lang = (navigator.language || navigator.userLanguage)?.substring(0, 2)
+    const lang = typeof navigator === 'undefined' ? 'en' : (navigator?.language ||  navigator?.userLanguage)?.substring(0, 2)
     const [isGermanSelected, toggleGerman] = useState(lang === 'de')
     const [isEnglishSelected, toggleEnglish] = useState(true)
     const [postAmount, increasePostAmount] = useState(3)
