@@ -6,7 +6,6 @@ import * as Scroll from 'react-scroll';
 import Layout from '../components/layout'
 import PageTitleJournalSingle from '../blocks/page-title/PageTitleJournalSingle';
 import JournalDescription from '../blocks/journal/JournalDescription';
-import JournalDate from '../blocks/journal/JournalDate';
 import JournalTags from '../blocks/journal/JournalTags';
 import BackToHome from '../components/button/BackToHome';
 let scroll = Scroll.animateScroll;
@@ -15,15 +14,17 @@ class BlogPostTemplate extends React.Component {
 
   render() {
     const scrollToTop = () => {
-      scroll.scrollToTop(100, {smooth: true});
+      scroll.scrollToTop(100, { smooth: true });
     }
     const post = get(this.props, 'data.contentfulPost')
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
       <>
         <Layout location={this.props.location}>
-          <Helmet title={siteTitle} />
+          <Helmet>
+            <title>rike.dev - {post.title}</title>
+            <meta name="description" content={post.description?.description} />
+          </Helmet>
           <PageTitleJournalSingle text={post.title} />
 
           <section id="page-content" className="spacer m-top-sm">
@@ -31,14 +32,14 @@ class BlogPostTemplate extends React.Component {
               <div id="single">
                 <div className="row gutter-width-lg">
                   <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 position-static single-content">
-                  <JournalTags text={post.category} />
+                    <JournalTags text={post.category} />
 
                     <JournalDescription text={post.text.childMarkdownRemark.html} />
 
 
-                    <p className="spacer m-top-xl text-right">
+                    <div className="spacer m-top-xl text-right">
                       <BackToHome />
-                    </p>
+                    </div>
 
                   </div>
                   <div className="align-self-end p-left-scroll">
@@ -74,11 +75,6 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query PostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     contentfulPost(slug: { eq: $slug }) {
       title
       category

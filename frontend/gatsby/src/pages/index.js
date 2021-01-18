@@ -11,7 +11,6 @@ import Contacts from '../blocks/contacts/Contacts';
 
 class RootIndex extends React.Component {
   state = {
-    siteTitle: get(this, 'props.data.site.siteMetadata.title'),
     posts: get(this, 'props.data.allContentfulPost.edges'),
 
   }
@@ -19,7 +18,11 @@ class RootIndex extends React.Component {
     return (
       <>
         <Layout location={this.props.location}>
-          <Helmet title={this.state.siteTitle} />
+          <Helmet>
+            <html lang="en, de" />
+            <title>rike.dev - Web development and beyond</title>
+            <meta name="description" content="I'm ulrike (or just rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />
+          </Helmet>
           <PageTitleHome />
           <Contacts />
           <Projects />
@@ -36,11 +39,6 @@ export default RootIndex
 
 export const pageQuery = graphql`
   query HomeQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allContentfulPost(sort: {order: DESC, fields: publishedAt}) {
       edges {
         node {

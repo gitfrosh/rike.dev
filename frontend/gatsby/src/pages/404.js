@@ -11,13 +11,10 @@ import BackToHome from '../components/button/BackToHome';
 
 class Page404 extends React.Component {
     render() {
-        const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-
         return (
             <>
-                <Helmet title={siteTitle} />
                 <Layout location={this.props.location}>
-                    <Helmet title={siteTitle} />
+                    <Helmet />
                     <PageTitle404 />
 
                     <div id="page-content" className="block">
@@ -38,13 +35,3 @@ class Page404 extends React.Component {
 }
 
 export default Page404
-
-export const pageQuery = graphql`
-    query Page404Query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `

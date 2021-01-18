@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../logo/Logo';
-import SearchModal from '../../components/modal/SearchModal';
 import MenuModal from '../../components/modal/MenuModal';
 
 const Header = () => {
@@ -10,9 +9,6 @@ const Header = () => {
                 <div className="align-self-center">
                     <Logo />
                 </div>
-
-                <SearchModal />
-
                 <MenuModal />
             </div>
         </header>

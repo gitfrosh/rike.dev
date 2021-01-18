@@ -39,7 +39,7 @@ const PageTitleHome = () => {
 
                         <div className="spacer p-top-lg">
                             <p className="p-large w-75">I'm ulrike (or just <b>rike</b>) and I am a software developer from
-                            Berlin with a focus on <b>web technologies</b> including · JavaScript ·
+                            Berlin, Germany with a focus on <b>web technologies</b> including · JavaScript ·
                             Node.js · HTML5 · CSS3 · React · Vue.js · Redux . GraphQL ·
                             Django · Flask · PostgreSQL · MongoDB and others. I hold a
                             Master's degree in computer science and I have worked as online content manager, librarian and

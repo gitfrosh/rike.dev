@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap';
 import FooterMenu from '../../blocks/footer/FooterMenu';
-
+import {Link} from "gatsby"
 class MenuModal extends Component {
     constructor( context ) {
         super( context );
@@ -44,9 +44,9 @@ class MenuModal extends Component {
                        dialogClassName="modal-full wrapper h-100"
                        ref={ node => this.chart = node }>
                     <Modal.Header>
-                        <a title="Logo" className="logo logo-secondary transform-scale-h" href={ process.env.PUBLIC_URL + "/" }>
+                        <Link title="Logo" className="logo logo-secondary transform-scale-h" to={"/"}>
                             rike.dev
-                        </a>
+                        </Link>
 
                         <button onClick={ this.close } type="button" className="close btn btn-link border-0 transform-scale-h" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">
@@ -65,11 +65,11 @@ class MenuModal extends Component {
                             <nav className="menu-primary">
                                 <ul className="clearfix list-unstyled">
                                     <li className={ "menu-item" + ( window.location.pathname === '/' ? " current-menu-item" : "" ) }>
-                                        <a title="Home" href={"/" }>Home</a>
+                                        <Link title="Home" to={"/" }>Home</Link>
                                     </li>
 
                                     <li className={ "menu-item" + ( window.location.pathname === '/contacts' ? " current-menu-item" : "" ) }>
-                                        <a title="Contacts" href={"/contact" }>Contact</a>
+                                        <Link title="Contacts" to={"/contact" }>Contact</Link>
                                     </li>
                                 </ul>
                             </nav>

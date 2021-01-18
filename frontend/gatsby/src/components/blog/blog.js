@@ -16,7 +16,6 @@ const Blog = ({ posts }) => {
             return item
         }
     })
-    console.log(filteredPosts)
     return (
         <div id="blog" className="bg-gray-light block spacer p-top-xl">
             <div className="wrapper">

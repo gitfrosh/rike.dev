@@ -25,10 +25,12 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'rike.dev - Web development and beyond',
+    siteUrl: `https://rike.dev`,
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
@@ -38,5 +40,26 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `rike.dev - Web development & beyond`,
+        short_name: `rike.dev`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icons/android-chrome-512x512.png`, // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://rike.dev',
+        sitemap: 'https://rike.dev/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }
