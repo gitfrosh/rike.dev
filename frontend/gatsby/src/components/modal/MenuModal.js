@@ -26,6 +26,7 @@ class MenuModal extends Component {
         this.open();
     }
 
+
     render() {
         return (
             <div className="menu-toggle align-self-center no-space">
@@ -64,11 +65,11 @@ class MenuModal extends Component {
                         <div className="align-self-center animated fadeinright w-100">
                             <nav className="menu-primary">
                                 <ul className="clearfix list-unstyled">
-                                    <li className={ "menu-item" + ( window.location.pathname === '/' ? " current-menu-item" : "" ) }>
+                                    <li className={ "menu-item" + ( this.props.location.pathname === '/' ? " current-menu-item" : "" ) }>
                                         <Link title="Home" to={"/" }>Home</Link>
                                     </li>
 
-                                    <li className={ "menu-item" + ( window.location.pathname === '/contacts' ? " current-menu-item" : "" ) }>
+                                    <li className={ "menu-item" + ( this.props.location.pathname === '/contact' ? " current-menu-item" : "" ) }>
                                         <Link title="Contacts" to={"/contact" }>Contact</Link>
                                     </li>
                                 </ul>
