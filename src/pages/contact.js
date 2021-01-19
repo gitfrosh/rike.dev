@@ -1,6 +1,4 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import PageTitleContacts from '../blocks/page-title/PageTitleContacts';

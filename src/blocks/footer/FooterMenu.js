@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const dataFooterMenu = [
     {
@@ -34,7 +35,17 @@ const FooterMenu = () => {
                             </a>
                         </li>
                     );
-                } ) }
+                } ) } | 
+                <li></li>
+                <li key="legal">
+                          <b>  <Link
+                                title="Legal"
+                                className="btn btn-link transform-scale-h border-0 p-0"
+                                to="/legal"
+                            >
+                                Legal
+                            </Link></b>
+                        </li>
             </ul>
         </nav>
     );

@@ -35,6 +35,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
