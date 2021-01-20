@@ -38,7 +38,7 @@ Email: hello[at] rike.dev<br />
                             <h3>Copyright Website and Blog
 </h3>
 
-<p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question. The authors retain full copyright to their work. Unauthorised use of any part of the text or graphics on this website is strictly prohibited. Unauthorised use of content or photos is theft and an infringement of copyright. If permission is granted, kindly provide a link back to the site at https://.fictioncanteen.blog. Fiction Canteen’s website contents are written and edited by Anton Lang and Lucy Jones. The views and opinions expressed on this blog are purely our own.</p>
+<p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question. The authors retain full copyright to their work. Unauthorised use of any part of the text or graphics on this website is strictly prohibited. Unauthorised use of content or photos is theft and an infringement of copyright. If permission is granted, kindly provide a link back to the site at https://rike.dev. The website's contents are written and edited by Rike Exner. The views and opinions expressed on this blog are purely our own.</p>
 <h3>Sources</h3>
                             <p>Template: Oxer by adveits</p>
 
