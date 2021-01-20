@@ -60,6 +60,12 @@ module.exports = {
         sitemap: 'https://rike.dev/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images/`,
+      },
+    },
   ],
 }

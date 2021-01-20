@@ -23,7 +23,7 @@ class RootIndex extends React.Component {
             <title>rike.dev - Web development and beyond</title>
             <meta name="description" content="I'm ulrike (or just rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />
           </Helmet>
-          <PageTitleHome />
+          <PageTitleHome image={this.props.data.file.childImageSharp.fluid} />
           <Contacts />
           <Projects />
           <br />
@@ -36,6 +36,7 @@ class RootIndex extends React.Component {
 }
 
 export default RootIndex
+
 
 export const pageQuery = graphql`
   query HomeQuery {
@@ -55,6 +56,13 @@ export const pageQuery = graphql`
               html
             }
           }
+        }
+      }
+    }
+     file(relativePath: { eq: "rike_exner.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }

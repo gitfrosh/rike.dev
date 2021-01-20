@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import * as Scroll from 'react-scroll';
-import img from "../../images/rike_exner.png"
 import Fader from 'react-fader'
 let scroll = Scroll.animateScroll;
+import Image from 'gatsby-image';
 
-const PageTitleHome = () => {
+const PageTitleHome = ({image}) => {
     const [hello, setHello] = useState("Hallo")
-
     useEffect(() => {
         setTimeout(function () {
             setHello("やあ")
@@ -65,7 +64,7 @@ const PageTitleHome = () => {
                             <div className="align-self-start w-100">
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <img src={img} alt="Rike Exner" className="img-fluid" />
+                                    <Image alt="Ulrike Exner" fluid={image} className="img-fluid" />
                                     </div>
                                 </div>
                             </div>
