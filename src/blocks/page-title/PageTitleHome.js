@@ -4,7 +4,7 @@ import Fader from 'react-fader'
 let scroll = Scroll.animateScroll;
 import Image from 'gatsby-image';
 
-const PageTitleHome = ({image}) => {
+const PageTitleHome = ({ image }) => {
     const [hello, setHello] = useState("Hallo")
     useEffect(() => {
         setTimeout(function () {
@@ -64,7 +64,7 @@ const PageTitleHome = ({image}) => {
                             <div className="align-self-start w-100">
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                    <Image alt="Ulrike Exner" fluid={image} className="img-fluid" />
+                                        <Image alt="Ulrike Exner" style={{ borderRadius: '50%' }} fluid={image} className="img-fluid" />
                                     </div>
                                 </div>
                             </div>
