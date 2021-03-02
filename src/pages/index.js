@@ -19,9 +19,9 @@ class RootIndex extends React.Component {
       <>
         <Layout location={this.props.location}>
           <Helmet>
-            <html lang="en, de" />
+            <html lang="en" />
             <title>rike.dev - Web development and beyond | Ulrike Exner</title>
-            <meta name="description" content="I'm ulrike (or just rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />
+            <meta name="description" content="I'm Ulrike Exner (or just Rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />
           </Helmet>
           <PageTitleHome image={this.props.data.file.childImageSharp.fluid} />
           <Contacts />
