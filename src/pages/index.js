@@ -24,7 +24,6 @@ class RootIndex extends React.Component {
             <meta name="description" content="I'm Ulrike Exner (or just Rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />
             <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5bd23855-029f-459b-a72d-6d41c3ea3d13" data-blockingmode="auto" type="text/javascript"></script>
           </Helmet>
-          <script id="CookieDeclaration" src="https://consent.cookiebot.com/5bd23855-029f-459b-a72d-6d41c3ea3d13/cd.js" type="text/javascript" async></script>
           <PageTitleHome image={this.props.data.file.childImageSharp.fluid} />
           <Contacts />
           <Projects />
