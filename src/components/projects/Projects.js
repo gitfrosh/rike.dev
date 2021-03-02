@@ -18,7 +18,7 @@ const projects = [
         "id": "3",
         "title": "The friendly @femtech_ bot",
         "description": "retweets and supports female developers, scientists and engineers on Twitter.",
-        "url": "https://twitter.com/femtech"
+        "url": "https://twitter.com/femtech_"
     },
     {
         "id": "4",
