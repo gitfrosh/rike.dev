@@ -58,7 +58,7 @@ module.exports = {
       options: {
         host: 'https://rike.dev',
         sitemap: 'https://rike.dev/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
+        policy: [{ userAgent: '*', disallow: '/legal' }]
       }
     },
     {
