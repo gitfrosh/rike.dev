@@ -30,7 +30,7 @@ class Layout extends React.Component {
           onAccept={() => {
             initializeAndTrack(location)
           }}
-          debug={true}
+          debug={false}
           flipButtons
           buttonStyle={{ background: '#fff' }}
           declineButtonStyle={{ background: '#7c989a', color:'#fff' }}
