@@ -39,8 +39,6 @@ Email: hello[at] rike.dev<br />
 </h3>
 
 <p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question. The authors retain full copyright to their work. Unauthorised use of any part of the text or graphics on this website is strictly prohibited. Unauthorised use of content or photos is theft and an infringement of copyright. If permission is granted, kindly provide a link back to the site at https://rike.dev. The website's contents are written and edited by Rike Exner. The views and opinions expressed on this blog are purely our own.</p>
-<h3>Cookies</h3>
-<script id="CookieDeclaration" src="https://consent.cookiebot.com/5bd23855-029f-459b-a72d-6d41c3ea3d13/cd.js" type="text/javascript" async></script>
 
 <h3>Sources</h3>
                             <p>Template: Oxer by adveits</p>

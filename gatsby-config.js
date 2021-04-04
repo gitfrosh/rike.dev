@@ -37,6 +37,24 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-netlify',
     {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'G-QX5B1LBNY2', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-analytics', // default
+          anonymize: true, // default
+          allowAdFeatures: false // default
+        },
+        // googleTagManager: {
+        //   trackingId: 'G-QX5B1LBNY2', // leave empty if you want to disable the tracker
+        //   cookieName: 'gatsby-gdpr-google-tagmanager', // default
+        //   dataLayerName: 'dataLayer', // default
+        // },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
+    },
+    {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },
