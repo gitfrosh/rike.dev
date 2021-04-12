@@ -64,7 +64,7 @@ const PageTitleHome = ({ image }) => {
                             <div className="align-self-start w-100">
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <Image alt="Ulrike Exner" style={{ borderRadius: '50%' }} fluid={image} className="img-fluid" />
+                                        <Image alt="Ulrike Exner" fluid={image} className="img-fluid" />
                                     </div>
                                 </div>
                             </div>
