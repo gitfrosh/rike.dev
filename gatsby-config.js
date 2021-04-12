@@ -51,7 +51,7 @@ module.exports = {
         //   dataLayerName: 'dataLayer', // default
         // },
         // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
+        environments: ['production']
       },
     },
     {
