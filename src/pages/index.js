@@ -6,9 +6,7 @@ import Layout from '../components/layout'
 import PageTitleHome from '../blocks/page-title/PageTitleHome';
 import Blog from '../components/blog/blog';
 import Projects from '../components/projects/Projects';
-
 import Contacts from '../blocks/contacts/Contacts';
-
 class RootIndex extends React.Component {
   state = {
     posts: get(this, 'props.data.allContentfulPost.edges'),

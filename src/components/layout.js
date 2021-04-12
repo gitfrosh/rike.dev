@@ -5,7 +5,6 @@ import "fontsource-roboto-mono"
 import "fontsource-roboto"
 import './assets/sass/style.scss';
 import CookieConsent from "react-cookie-consent";
-import { useLocation } from "@reach/router";
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
 class Layout extends React.Component {
   render() {

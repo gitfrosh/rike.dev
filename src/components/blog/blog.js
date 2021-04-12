@@ -3,9 +3,26 @@ import LoadMoreButton from '../loadmore/LoadMore'
 import { Link } from 'gatsby'
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 
+const getBrowserLanguage = () => {
+    if (typeof navigator === `undefined`) {
+        return "en";
+    }
+
+    const lang = navigator && navigator.language && navigator.language.split("-")[0];
+    console.log(lang)
+    if (!lang) return "en";
+
+    switch (lang) {
+        case "de":
+            return "de";
+        default:
+            return "en";
+    }
+};
+
 const Blog = ({ posts }) => {
-    const lang = typeof navigator === 'undefined' ? 'en' : (navigator?.language ||  navigator?.userLanguage)?.substring(0, 2)
-    const [isGermanSelected, toggleGerman] = useState(lang === 'de')
+    const lang = getBrowserLanguage()
+    const [isGermanSelected, toggleGerman] = useState(lang === 'de' ? true : false)
     const [isEnglishSelected, toggleEnglish] = useState(true)
     const [postAmount, increasePostAmount] = useState(3)
     const totalPostAmount = posts?.length
