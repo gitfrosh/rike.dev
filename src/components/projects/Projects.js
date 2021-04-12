@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby'
 
 const projects = [
     {
@@ -46,7 +45,7 @@ const Projects = () => {
                                 <div key={key} className="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div className="card">
                                         <div className="card-body p-large">
-                                            <h4><Link to={item.url}>{item.title}</Link></h4>
+                                            <h4><a href={item.url}>{item.title}</a></h4>
                                             <p className="mt-0">{item.description}</p>
                                         </div>
                                     </div>
