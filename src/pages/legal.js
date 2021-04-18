@@ -29,6 +29,7 @@ const Legal = ({ location }) => {
             <Layout location={location}>
                 <Helmet>
                     <title>rike.dev - Contact</title>
+                    <meta name="robots" content="noindex" />
                 </Helmet>
                 <section id="page-content" className="block spacer p-center-lg text-right">
                     <div className="wrapper">
