@@ -31,7 +31,7 @@ const Projects = () => {
             {
                 "id": "2",
                 "title": "Dein Weg in die Web-Entwicklung",
-                "description": "NEU! Lerne alles, was du für einen erfolgreichen Einstieg in die Webentwicklung brauchst in 2 x 6 Wochen. Nur für Frauen!",
+                "description": "Online-Kurse für Anfängerinnen und Fortgeschrittene. Women only!",
                 "url": "https://webentwicklung-kurse-fuer-frauen.rike.dev/",
                 "featured": true,
             },
