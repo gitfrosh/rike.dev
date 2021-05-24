@@ -29,8 +29,12 @@ module.exports = {
     siteUrl: `https://rike.dev`,
   },
   plugins: [
-    'gatsby-plugin-sitemap',
-    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/kurse/buchung-bestaetigt`, `/kurse/xPuezr6542`]
+      }
+    }, 'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
@@ -76,7 +80,7 @@ module.exports = {
       options: {
         host: 'https://rike.dev',
         sitemap: 'https://rike.dev/sitemap.xml',
-        policy: [{ userAgent: '*', disallow: ['/legal'] }]
+        policy: [{ userAgent: '*', disallow: ['/kurse/rike.dev-Syllabus.pdf', '/kurse/rike.dev-Roadmap.pdf', '/kurse/buchung-bestaetigt', '/kurse/xPuezr6542', '/legal'] }]
       }
     },
     {
