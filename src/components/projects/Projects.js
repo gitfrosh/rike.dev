@@ -32,7 +32,7 @@ const Projects = () => {
                 "id": "2",
                 "title": "Dein Weg in die Web-Entwicklung",
                 "description": "Online-Kurse für Anfängerinnen und Fortgeschrittene. Women only!",
-                "url": "https://webentwicklung-kurse-fuer-frauen.rike.dev/",
+                "url": "https://rike.dev/kurse",
                 "featured": true,
             },
             {
