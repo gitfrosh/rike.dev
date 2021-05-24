@@ -32,12 +32,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
-        exclude: [`/kurse/buchung-bestaetigt`, `/kurse/xPuezr6542`],
-        additionalSitemaps: [ {
+        exclude: [`/dev-404-page/`,
+          `404/`,
+          `/legal/`,
+          `/404.html`,
+          `/offline-plugin-app-shell-fallback/`, `/kurse/buchung - bestaetigt`, `/kurse/xPuezr6542`],
+        additionalSitemaps: [{
+          name: `kurse`,
           url: `https://rike.dev/kurse/sitemap.xml`,
-      },]
+        },]
       }
-    }, 'gatsby-transformer-remark',
+    },
+    'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
