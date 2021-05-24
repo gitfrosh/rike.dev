@@ -16,7 +16,10 @@ class RootIndex extends React.Component {
     return (
       <>
         <Layout location={this.props.location}>
-          <Helmet>
+          <Helmet
+              link={[
+                { rel: 'canonical', href: `https://rike.dev` }
+              ]}>
             <html lang="en" />
             <title>rike.dev - Web development and beyond | Ulrike Exner</title>
             <meta name="description" content="I'm Ulrike Exner (or just Rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />

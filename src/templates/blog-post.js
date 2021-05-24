@@ -21,7 +21,11 @@ class BlogPostTemplate extends React.Component {
     return (
       <>
         <Layout location={this.props.location}>
-          <Helmet>
+          <Helmet
+            link={[
+              { rel: 'canonical', href: `https://rike.dev/${post.slug}/` }
+            ]}
+          >
             <title>rike.dev - {post.title}</title>
             <meta name="description" content={post.description?.description} />
           </Helmet>
@@ -78,6 +82,7 @@ export const pageQuery = graphql`
     contentfulPost(slug: { eq: $slug }) {
       title
       category
+      slug
       publishedAt(formatString: "MMMM Do, YYYY")
       text {
         childMarkdownRemark {
