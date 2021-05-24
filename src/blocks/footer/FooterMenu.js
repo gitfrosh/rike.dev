@@ -16,6 +16,11 @@ const dataFooterMenu = [
         "id": "3",
         "title": "Xing",
         "link": "https://www.xing.com/profile/Ulrike_Exner4"
+    },
+    {
+        "id": "4",
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/ulrike-exner-80aa28205/"
     }
 ]
 
