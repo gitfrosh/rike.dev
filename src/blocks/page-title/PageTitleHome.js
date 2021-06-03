@@ -37,25 +37,12 @@ const PageTitleHome = ({ image }) => {
                         </div>
 
                         <div className="spacer p-top-lg">
-                            <p className="p-large w-75">I'm ulrike (or just <b>rike</b>) and I am a software developer from
+                            <p className="p-large w-75">I'm ulrike (or just <b>rike</b>) and I am a software developer and lecturer from
                             Berlin, Germany with a focus on <b>web technologies</b> including · JavaScript ·
                             Node.js · HTML5 · CSS3 · React · Vue.js · Redux . GraphQL ·
                             Django · Flask · PostgreSQL · MongoDB and others. I hold a
                             Master's degree in computer science and I have worked as online content manager, librarian and
-                            freelance web developer. Annually, I give talks for beginners in
-              web development at <a
-                                    target="_blank"
-                                    className="fancy-link"
-                                    href="https://www.informatica-feminale.de/"
-                                    rel="noopener noreferrer"
-                                >
-                                    Informatica Feminale
-              </a> in Bremen to inspire more women to get into web development.
-              Sometimes I produce audio podcasts for scientific purposes and I
-              like <a className="btn-link" onClick={scrollToBottom}>
-                                    writing
-              </a>
-              . If you'd like to connect, do not hesitate to drop a line! <br /></p>
+                            freelance web developer.  If you'd like to connect, do not hesitate to drop a line! <br /></p>
                         </div>
                     </div>
 
