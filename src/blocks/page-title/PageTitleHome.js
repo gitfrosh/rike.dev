@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as Scroll from 'react-scroll';
 import Fader from 'react-fader'
+import { Link } from "gatsby";                                                                                                                                                                                                                                         
 let scroll = Scroll.animateScroll;
 import Image from 'gatsby-image';
 
@@ -37,12 +38,11 @@ const PageTitleHome = ({ image }) => {
                         </div>
 
                         <div className="spacer p-top-lg">
-                            <p className="p-large w-75">I'm ulrike (or just <b>rike</b>) and I am a software developer and lecturer from
-                            Berlin, Germany with a focus on <b>web technologies</b> including · JavaScript ·
-                            Node.js · HTML5 · CSS3 · React · Vue.js · Redux . GraphQL ·
-                            Django · Flask · PostgreSQL · MongoDB and others. I hold a
-                            Master's degree in computer science and I have worked as online content manager, librarian and
-                            freelance web developer.  If you'd like to connect, do not hesitate to drop a line! <br /></p>
+                            <p style={{ fontSize: "2rem"}}  className="p-large w-75">I'm ulrike (or just <b>rike</b>) and I am a software developer and lecturer from
+                            Berlin, Germany with a focus on <b>web technologies</b>.
+                        <br />I love to inspire women to get into coding and <Link to="/kurse">offer online web development courses in German.</Link></p>
+        
+                        
                         </div>
                     </div>
 
