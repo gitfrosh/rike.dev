@@ -3,9 +3,9 @@ import React from 'react';
 const JournalDescription = ({ text }) => {
     return (
         <div className="description">
-            <p className="text"
+            <div className="text"
                 dangerouslySetInnerHTML={{
-                    __html: `${text}`,
+                    __html: `<div>${text}</div>`,
                 }}
             />
         </div>
