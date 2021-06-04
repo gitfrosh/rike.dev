@@ -40,7 +40,7 @@ const PageTitleHome = ({ image }) => {
                         <div className="spacer p-top-lg">
                             <p style={{ fontSize: "2rem"}}  className="p-large w-75">I'm ulrike (or just <b>rike</b>) and I am a software developer and lecturer from
                             Berlin, Germany with a focus on <b>web technologies</b>.
-                        <br />I love to inspire women to get into coding and <Link to="/kurse">offer online web development courses in German.</Link></p>
+                        <br />I love to inspire women to get into coding and <a href="/kurse">offer online web development courses in German.</a></p>
         
                         
                         </div>
