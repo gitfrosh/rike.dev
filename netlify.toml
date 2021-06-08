@@ -2,3 +2,8 @@
   from = "/kurse/*"
   to = "https://laughing-mcnulty-fba0a2.netlify.app/:splat"
   status = 200
+
+[[redirects]]
+  from = "/bots"
+  to = "/2021/06/08/how-to-build-a-friendly-social-bot/"
+  status = 301
