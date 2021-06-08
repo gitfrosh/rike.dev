@@ -329,6 +329,9 @@ ul {
   li {
     font-family: $font_primary;
     margin-bottom: 1.39rem;
+    line-height: 1.75;
+    font-size: 1.31rem;
+    margin-left: 1rem;
     @include lhCrop-b(1.23, 0.75);
 
     &:last-child {
@@ -356,8 +359,9 @@ ol {
   padding: 0;
 
   li {
-    line-height: 1.23;
-    margin-bottom: 1.39rem;
+    line-height: 1.75;
+    font-size: 1.31rem;
+    margin-left: 1rem;
     @include lhCrop-b(1.23, 0.75);
     margin-bottom: 1.39rem;
 
