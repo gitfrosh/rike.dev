@@ -12,3 +12,8 @@
   from = "/tutorial-2021"
   to = "/2018/07/15/node-js-installieren-und-einen-webserver-starten/"
   status = 301
+
+[[redirects]]
+  from = "/python-tutorial-2021"
+  to = "/2021/26/08/mit-dem-terminal-arbeiten-und-python-installieren/"
+  status = 301
