@@ -17,3 +17,8 @@
   from = "/python-tutorial-2021"
   to = "/2021/26/08/mit-dem-terminal-arbeiten-und-python-installieren/"
   status = 301
+
+[[redirects]]
+  from = "kurse/live-webinar"
+  to = "https://demo.bigbluebutton.org/gl/ulr-9gh-png-sgz"
+  status = 301
