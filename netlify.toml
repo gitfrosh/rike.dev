@@ -19,6 +19,6 @@
   status = 301
 
 [[redirects]]
-  from = "kurse/live-webinar"
+  from = "/kurse/live-webinar"
   to = "https://demo.bigbluebutton.org/gl/ulr-9gh-png-sgz"
   status = 301
