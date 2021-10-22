@@ -1,26 +1,10 @@
 import React, { useEffect, useState } from 'react';   
-
-const getBrowserLanguage = () => {
-    if (typeof navigator === `undefined`) {
-        return "en";
-    }
-    const lang = navigator && navigator.language && navigator.language.split("-")[0];
-    if (!lang) return "en";
-
-    switch (lang) {
-        case "de":
-            return "de";
-        default:
-            return "en";
-    }
-};
-
+import { getBrowserLanguage } from '../../util/helpers';
 
 const Projects = () => {
     const [lang] = useState(getBrowserLanguage())
     const [projects, setProjects] = useState([])
     useEffect(() => {
-        console.log(lang)
         if (lang === "de") {
             setProjects([{
                 "id": "1",

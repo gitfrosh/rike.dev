@@ -1,36 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import LoadMoreButton from '../loadmore/LoadMore'
 import { Link } from 'gatsby'
 import CSSTransitionGroup from 'react-addons-css-transition-group';
-
-const getBrowserLanguage = () => {
-    if (typeof navigator === `undefined`) {
-        return "en";
-    }
-    const lang = navigator && navigator.language && navigator.language.split("-")[0];
-    if (!lang) return "en";
-
-    switch (lang) {
-        case "de":
-            return "de";
-        default:
-            return "en";
-    }
-};
+import { getBrowserLanguage } from '../../util/helpers';
 
 const Blog = ({ posts }) => {
-    const lang = getBrowserLanguage()
-    const [isGermanSelected, toggleGerman] = useState(lang === 'de' ? true : false)
+    const [lang] = useState(getBrowserLanguage())
+    const [isGermanSelected, toggleGerman] = useState(false)
     const [isEnglishSelected, toggleEnglish] = useState(true)
     const [postAmount, increasePostAmount] = useState(3)
     const totalPostAmount = posts?.length
 
+    useEffect(() => {
+        if (lang === "de") {
+            toggleGerman(true)
+        }
+    }, [lang])
 
-    const filteredPosts = posts.filter(item => {
+    const filteredPosts = useMemo(() =>     posts.filter(item => {
         if ((isGermanSelected && item.node.language === "de") || (isEnglishSelected && item.node.language === "en")) {
             return item
         }
-    }).slice(0, postAmount)
+    }).slice(0, postAmount), [posts, postAmount, isGermanSelected, isEnglishSelected]);
+
+
+    console.log(filteredPosts)
     return (
         <div id="blog" className="bg-gray-light block spacer p-top-xl">
             <div className="wrapper">
