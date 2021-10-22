@@ -20,12 +20,6 @@ const Projects = () => {
                 "featured": true,
             },
             {
-                "id": "3",
-                "title": "The friendly @femtech_ bot",
-                "description": "retweets and supports female developers, scientists and engineers on Twitter.",
-                "url": "https://twitter.com/femtech_"
-            },
-            {
                 "id": "4",
                 "title": ".. more",
                 "description": "on Github!",
@@ -44,12 +38,6 @@ const Projects = () => {
                 "title": "minako",
                 "description": "is a super lightweight headless, API-first, flat-file cms written in Node.js/Next.js made for blogs and other small content-driven frontends.",
                 "url": "https://github.com/gitfrosh/minako"
-            },
-            {
-                "id": "3",
-                "title": "The friendly @femtech_ bot",
-                "description": "retweets and supports female developers, scientists and engineers on Twitter.",
-                "url": "https://twitter.com/femtech_"
             },
             {
                 "id": "4",
