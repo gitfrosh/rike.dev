@@ -1,7 +1,10 @@
 import React from 'react';
 
-const LoadMoreButton = ({ increasePostAmount, postAmount }) => {
-
+const LoadMoreButton = ({ increasePostAmount, postAmount, posts }) => {
+   
+    if (postAmount >= posts.length) {
+        return null
+    }
     return (
         <div className="loadmore spacer m-top-lg text-md-center text-center">
             <button

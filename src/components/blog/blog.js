@@ -23,8 +23,6 @@ const Blog = ({ posts }) => {
         }
     }).slice(0, postAmount), [posts, postAmount, isGermanSelected, isEnglishSelected]);
 
-
-    console.log(filteredPosts)
     return (
         <div id="blog" className="bg-gray-light block spacer p-top-xl">
             <div className="wrapper">
@@ -98,7 +96,7 @@ const Blog = ({ posts }) => {
                         }
                     </CSSTransitionGroup>
                     <div className="text-center">
-                        <LoadMoreButton postAmount={postAmount} totalPostAmount={totalPostAmount} increasePostAmount={increasePostAmount} />
+                        <LoadMoreButton posts={posts} postAmount={postAmount} totalPostAmount={totalPostAmount} increasePostAmount={increasePostAmount} />
                     </div>
                 </div>
             </div>
