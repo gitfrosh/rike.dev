@@ -63,12 +63,12 @@ class Courses extends React.Component {
                 <Layout location={this.props.location}>
                     <Helmet
                         link={[
-                            { rel: 'canonical', href: "https://rike.dev/kurse/" }
+                            { rel: 'canonical', href: "https://rike.dev/courses/" }
                           ]}
                           meta={[
                             {
                               name: 'description',
-                              content: "Lerne in kleinen Kursen jetzt alles was du für deinen Einstieg in die Webentwickung brauchst: persönlich, professionell praxisnah & nur für Frauen",
+                              content: "Courses and workshops for coding beginners - and empowering women by the way.",
                             },
                           ]}>
                           <html lang="de" />
