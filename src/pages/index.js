@@ -1,45 +1,13 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
+import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import PageTitleHome from '../blocks/page-title/PageTitleHome';
 import Blog from '../components/blog/blog';
 import Projects from '../components/projects/Projects';
 import Contacts from '../blocks/contacts/Contacts';
-class RootIndex extends React.Component {
-  state = {
-    posts: get(this, 'props.data.allContentfulPost.edges'),
-
-  }
-  render() {
-    return (
-      <>
-        <Layout location={this.props.location}>
-          <Helmet
-              link={[
-                { rel: 'canonical', href: `https://rike.dev` }
-              ]}>
-            <html lang="en" />
-            <title>rike.dev - Web development and beyond | Ulrike Exner</title>
-            <meta name="description" content="I'm Ulrike Exner (or just Rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />
-          </Helmet>
-          <PageTitleHome image={this.props.data.file.childImageSharp.fluid} />
-          <Contacts />
-          <Projects />
-          <br />
-          <Blog posts={this.state.posts} />
-        </Layout>
-
-      </>
-    )
-  }
-}
-
-export default RootIndex
-
-
-export const pageQuery = graphql`
+const RootIndex = ({location}) => {
+  const data = useStaticQuery(graphql`
   query HomeQuery {
     allContentfulPost(sort: {order: DESC, fields: publishedAt}) {
       edges {
@@ -68,4 +36,34 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`);
+
+  const posts = data.allContentfulPost.edges;
+  const image = data.file.childImageSharp.fluid
+    return (
+      <>
+        <Layout location={location}>
+          <Helmet
+              link={[
+                { rel: 'canonical', href: `https://rike.dev` }
+              ]}>
+            <html lang="en" />
+            <title>rike.dev - Web development and beyond | Ulrike Exner</title>
+            <meta name="description" content="I'm Ulrike Exner (or just Rike), fullstack developer from Berlin, hosting
+             workshops for coding beginners." />
+          </Helmet>
+          <PageTitleHome image={image} />
+          <Contacts />
+          <Projects />
+          <br />
+          <Blog posts={posts} />
+        </Layout>
+
+      </>
+    )
+  
+}
+
+export default RootIndex
+
+

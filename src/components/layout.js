@@ -8,7 +8,7 @@ import CookieConsent from "react-cookie-consent";
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
 class Layout extends React.Component {
   render() {
-    const { location, children } = this.props
+    const { location, children, lang } = this.props
 
     return (
       <Fragment>

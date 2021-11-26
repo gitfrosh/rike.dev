@@ -1,18 +1,9 @@
-import React, { useState, useEffect, useMemo } from 'react'
-import { Link } from 'gatsby'
-import { getBrowserLanguage } from '../../util/helpers';
-import CSSTransitionGroup from 'react-addons-css-transition-group';
+import React, { useState, useMemo } from 'react'
 
-const Events = ({ events }) => {
-    const [lang] = useState(getBrowserLanguage())
-    const [isGermanSelected, toggleGerman] = useState(false)
+const Events = ({ lang, events }) => {
+    const [isGermanSelected, toggleGerman] = useState(true)
     const [isEnglishSelected, toggleEnglish] = useState(true)
 
-    useEffect(() => {
-        if (lang === "de") {
-            toggleGerman(true)
-        }
-    }, [lang])
 
     const filteredEvents = useMemo(() => events.filter(item => {
         if ((isGermanSelected && item.node.language === "de") || (isEnglishSelected && item.node.language === "en")) {

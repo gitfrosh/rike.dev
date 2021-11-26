@@ -91,7 +91,7 @@ class Kurse extends React.Component {
                         <div className="wrapper">
                             <div id="about" className="block">
                                 <h2>
-                                    <span className="line">Kurse</span>,<br /> Workshops & Speaking
+                                    <span className="line">Kurse</span>,<br /> Workshops & Talks
                                 </h2>
 
                                 <div className="row bg-half-ring-left gutter-width-lg">
@@ -125,7 +125,7 @@ class Kurse extends React.Component {
                                     </div>
                                 </div>
                             </center>
-                            <Events events={this.state.events} />
+                            <Events lang={"de"} events={this.state.events} />
 
                             {/* <Awards />  */}
                         </div>

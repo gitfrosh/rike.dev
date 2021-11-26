@@ -69,6 +69,10 @@ class MenuModal extends Component {
                                         <Link title="Home" to={"/" }>Home</Link>
                                     </li>
 
+                                    <li className={ "menu-item" + ( this.props.location.pathname === '/kurse' || this.props.location.pathname === '/courses' ? " current-menu-item" : "" ) }>
+                                        <Link title={this.props.lang === "de" ? "Kurse" : "Courses"} to={this.props.lang === "de" ? "/kurse" : "/courses"}>{this.props.lang === "de" ? "Kurse" : "Courses"}</Link>
+                                    </li>
+
                                     <li className={ "menu-item" + ( this.props.location.pathname === '/contact' ? " current-menu-item" : "" ) }>
                                         <Link title="Contacts" to={"/contact" }>Contact</Link>
                                     </li>
