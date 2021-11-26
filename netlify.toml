@@ -67,3 +67,24 @@
   from = "/kurse/rike.dev-Syllabus.pdf"
   to = "/kurse/"
   status = 301
+
+[[redirects]]
+  from = "/kurse/xPuezr6542"
+  to = "/xPuezr6542/"
+  status = 301
+
+  [[redirects]]
+  from = "/kurse/kostenloses-erstgespraech"
+  to = "/kurse/"
+  status = 301
+
+  [[redirects]]
+  from = "/kurse/buchungsseite"
+  to = "/kurse/"
+  status = 301
+  
+    [[redirects]]
+  from = "/kurse/replay"
+  to = "/kurse/"
+  status = 301
+  

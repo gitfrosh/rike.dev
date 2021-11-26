@@ -76,11 +76,16 @@ class Kurse extends React.Component {
                 <Layout location={this.props.location}>
                     <Helmet
                         link={[
-                            { rel: 'canonical', href: `https://rike.dev` }
-                        ]}>
-                        <html lang="en" />
-                        <title>rike.dev - Web development and beyond | Ulrike Exner</title>
-                        <meta name="description" content="I'm Ulrike Exner (or just Rike) and I am a software developer from Berlin, Germany with a focus on web technologies." />
+                            { rel: 'canonical', href: "https://rike.dev/kurse/" }
+                          ]}
+                          meta={[
+                            {
+                              name: 'description',
+                              content: "Lerne in kleinen Kursen jetzt alles was du für deinen Einstieg in die Webentwickung brauchst: persönlich, professionell praxisnah & nur für Frauen",
+                            },
+                          ]}>
+                          <html lang="de" />
+                          <title>rike.dev - Webentwicklung: Kurse für Frauen</title>
                     </Helmet>
                     <section id="page-content" className="spacer p-top-xl">
                         <div className="wrapper">
