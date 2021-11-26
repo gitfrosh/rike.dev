@@ -1,9 +1,4 @@
 [[redirects]]
-  from = "/kurse/*"
-  to = "https://laughing-mcnulty-fba0a2.netlify.app/:splat"
-  status = 200
-
-[[redirects]]
   from = "/bots"
   to = "/2021/06/08/how-to-build-a-friendly-social-bot/"
   status = 301
@@ -16,4 +11,59 @@
 [[redirects]]
   from = "/python-tutorial-2021"
   to = "/2021/26/08/mit-dem-terminal-arbeiten-und-python-installieren/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/gratis"
+  to = "/kurse/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/dein-weg-in-die-webentwicklung"
+  to = "/kurse/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/ueber-mich"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/blog"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/kontakt"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/gratis-webinar"
+  to = "/kurse/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/roadmap"
+  to = "/kurse/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/newsletter"
+  to = "/kurse/"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/rike.dev-Roadmap.pdf"
+  to = "/rike.dev-Roadmap.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/rike.dev-Webinar.pdf"
+  to = "/rike.dev-Webinar.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/kurse/rike.dev-Syllabus.pdf"
+  to = "/kurse/"
   status = 301
