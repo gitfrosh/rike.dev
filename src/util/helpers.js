@@ -35,13 +35,13 @@ export const submit = (email, setCallback) => {
             .then(response => response.json())
             .then(response => {
                 if (response?.response === 'Success') {
-                    setCallback("Vielen Dank für dein Interesse! Als nächstes schau bitte in deine E-Mails und klinge auf den Download-Link.")
+                    setCallback("Vielen Dank für dein Interesse! Als nächstes schau bitte in deine E-Mails und klicke auf den Download-Link.")
 
                 } else if (response?.response === "Exists") {
                     setCallback("Du bist bereits registriert.")
 
                 } else if (response?.response === "Member In Compliance State") {
-                    setCallback("Du bist scheinbar schon registriert, aber hast noch nicht in auf den Bestätigungslink in deinen E-Mails geklickt. Bitte prüfe dein Postfach.")
+                    setCallback("Du bist scheinbar schon registriert, aber hast noch nicht auf den Bestätigungslink in deinen E-Mails geklickt. Bitte prüfe dein Postfach.")
 
                 }
                 else {
