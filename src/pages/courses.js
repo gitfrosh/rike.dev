@@ -91,7 +91,7 @@ class Courses extends React.Component {
                                     </div>
 
                                     <div className="col align-self-center description">
-                                        <h4>Eager to dive into programming and web development as a newbie?</h4>
+                                        <h4>Would you like to dive into programming and software development as a newbie?</h4>
 
                                         <p>I love to inspire more women* to get into coding and try out web development. 
                                             Thus, I give workshops for beginners at <a rel="noopener noreferrer"
