@@ -15,7 +15,7 @@ class Layout extends React.Component {
 
         <Header location={location} />
 
-        <main id="main" className="site-main">
+        <main style={{ minHeight: '85vH'}} id="main" className="site-main">
           {children}
         </main>
         <CookieConsent

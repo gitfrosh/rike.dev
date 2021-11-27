@@ -1,8 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
-import PageTitleContacts from '../blocks/page-title/PageTitleContacts';
-import ContactForm from '../components/form/ContactForm';
+import { Link } from "gatsby";
 
 class Prelaunch extends React.Component {
   render() {
@@ -19,53 +18,24 @@ class Prelaunch extends React.Component {
                 <center>
             <h4>
                 
-                        Hier geht's zum Download der kostenlosen Roadmap.
+                        Thank you for your subscription! 🎉
 
                       </h4>
+                      <br />
+            <br />
+            <br />
+            <br />
+            <br />
+                      <p><em>Do you speak German?</em> <br />Hier geht's zur kostenlosen Web Developer Roadmap:</p>
                       <p>
-                        <a href={`/rike.dev-Roadmap.pdf`} download>
+                        <Link to={`/rike.dev-Roadmap.pdf`}>
 
-                          <button className="btn btn-lg">
+                          <button className="btn btn-lg has-text-color has-white-color has-background has-gray-background-color">
                             Download
-                          </button></a></p>
+                          </button></Link></p>
                           </center>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            
-            <br />
-            <br />
-            <br />
-            
+      
           </section>
 
         </Layout>
