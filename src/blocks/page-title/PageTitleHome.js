@@ -9,13 +9,7 @@ import { getBrowserLanguage } from '../../util/helpers';
 const PageTitleHome = ({ image }) => {
     const [hello, setHello] = useState("Hallo")
     const [lang] = useState(getBrowserLanguage())
-    const [isGermanSelected, toggleGerman] = useState(false)
   
-    useEffect(() => {
-        if (lang === "de") {
-            toggleGerman(true)
-        }
-    }, [lang])
 
     useEffect(() => {
         setTimeout(function () {
@@ -50,7 +44,7 @@ const PageTitleHome = ({ image }) => {
                         <div className="spacer p-top-lg">
                             <p style={{ fontSize: "2rem"}}  className="p-large w-75">I'm Ulrike Exner (or just <b>Rike</b>), fullstack developer from Berlin and sometimes hosting
              workshops for coding beginners.
-                        <br />Check out where I am speaking next <Link to={isGermanSelected ? "/kurse" : "/courses"}>here.</Link></p>
+                        <br />Check out what's going on next <Link to={lang === "de" ? "/kurse" : "/courses"}>here.</Link></p>
         
                         
                         </div>
