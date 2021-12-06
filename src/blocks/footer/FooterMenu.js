@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const dataFooterMenu = [
-    {
-        "id": "0",
-        "title": "Instagram",
-        "link": "https://www.instagram.com/rike.codes"
-    },
+    // {
+    //     "id": "0",
+    //     "title": "Instagram",
+    //     "link": "https://www.instagram.com/rike.codes"
+    // },
     {
         "id": "1",
         "title": "Github",
