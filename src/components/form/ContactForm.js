@@ -68,20 +68,9 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <form action="https://mailthis.to/form@rike.dev" method="POST" className="wpcf7-form">
+            <form   action="https://formspree.io/f/xrgjeozw"
+            method="POST" className="wpcf7-form">
                 <p className="input-group gutter-width-30">
-                    <span className="gutter-width">
-                        <input name="name"
-                               type="text"
-                               value={ this.state.values.name }
-                               onChange={ this.handleInputChange }
-                               size="30"
-                               maxLength="245"
-                               required="required"
-                               placeholder="Name *" />
-                    </span>
-
-                    <span className="gutter-width">
                         <input name="email"
                                type="email"
                                value={ this.state.values.email }
@@ -90,7 +79,6 @@ class ContactForm extends Component {
                                maxLength="100"
                                required="required"
                                placeholder="Email/Phone no. *" />
-                    </span>
                 </p>
 
                 <p>
