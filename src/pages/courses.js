@@ -94,9 +94,7 @@ class Courses extends React.Component {
                                         <h4>Would you like to dive into programming and software development as a newbie?</h4>
 
                                         <p>I love to inspire more women* to get into coding and try out web development. 
-                                            Thus, I give workshops for beginners at <a rel="noopener noreferrer"
-                                            target="_blank" href="https://discover-code.net"><span className="line" style={{ color: '#2b2b2b' }} >discover:code</span></a> in English and
-                                            host more extensive trainings in German at irregular intervals.</p>
+                                            Thus, I give workshops for beginners and host extensive trainings in German or English at irregular intervals.</p>
                                     </div>
                                 </div>
                             </div>

@@ -106,8 +106,8 @@ class Kurse extends React.Component {
                                     <div className="col align-self-center description">
                                         <h4>Dein Weg in die Web-Entwicklung</h4>
 
-                                        <p>Du hast Lust, dich im Bereich Programmierung oder Web-Entwicklung weiterzubilden, aber weißt einfach nicht, wo du anfangen sollst? Ich biete regelmäßig Kurse, Workshops und Webinare für Interessierte und Anfängerinnen* an. Schau in die Veranstaltungsliste unten oder bei <a rel="noopener noreferrer"
-                                            target="_blank" href="https://discover-code.net"><span className="line" style={{ color: '#2b2b2b' }} >discover:code</span></a> vorbei.</p>
+                                        <p>Du hast Lust, dich im Bereich Programmierung oder Web-Entwicklung weiterzubilden, aber weißt einfach nicht, wo du anfangen sollst? Ich biete regelmäßig Kurse, Workshops und Webinare für Interessierte 
+                                            und Anfängerinnen* an. Schau in die Veranstaltungsliste unten!</p>
                                     </div>
                                 </div>
                             </div>

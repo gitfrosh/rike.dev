@@ -53,7 +53,7 @@ const Events = ({ lang, events }) => {
                             <span className="text-secondary bold"> {item.node.event} </span>  {dateEnd ? `${date}-${dateEnd}` : date} {' '}
                             {item.node.slides && <span><button className="btn btn-xs has-text-color has-white-color has-background has-gray-background-color"><a style={{ color: '#fff' }} href={item.node.slides}>Slides</a></button></span>}{' '}
                             {item.node.replay && <span><button className="btn btn-xs has-text-color has-white-color has-background has-gray-background-color"><a style={{ color: '#fff' }} href={item.node.replay}>Replay</a></button></span>}
-                            <br />{isFuture && <span style={{ color: "#7c989a" }} className="has-background has-gray-light-background-color">&#10000; {item.node.registrationOpen ? (lang === "de" ? "Jetzt anmelden!" : "Sign up now!") : (lang === "de" ? "Anmeldung bald offen" : "Registration open soon")}</span>}
+                            <br />{isFuture && <span style={{ color: "#7c989a" }} className="has-background has-gray-light-background-color">&#10000; {item.node.registrationOpen ? (lang === "de" ? "Jetzt anmelden!" : "Sign up now!") : (lang === "de" ? "Anmeldung bald offen" : "Registration opening soon")}</span>}
                         </p>
 
 
