@@ -3,8 +3,8 @@ import React, { useState, useMemo } from 'react'
 const Events = ({ lang, events }) => {
     const [isGermanSelected, toggleGerman] = useState(true)
     const [isEnglishSelected, toggleEnglish] = useState(true)
-
-
+    console.log(lang)
+    console.log(events)
     const filteredEvents = useMemo(() => events.filter(item => {
         if ((isGermanSelected && item.node.language === "de") || (isEnglishSelected && item.node.language === "en")) {
             return item
@@ -12,8 +12,10 @@ const Events = ({ lang, events }) => {
     }), [events, isGermanSelected, isEnglishSelected]);
 
     const futureEvents = useMemo(() => {
+        console.log(filteredEvents)
         return filteredEvents.filter(event => {
             const isFuture = Date.parse(event.node.date) - Date.parse(new Date()) > 0;
+            event.isPast = false;
 
             if (isFuture) return event;
         })
@@ -22,16 +24,15 @@ const Events = ({ lang, events }) => {
     const pastEvents = useMemo(() => {
         return filteredEvents.filter(event => {
             const isPast = Date.parse(event.node.date) - Date.parse(new Date()) < 0;
-
+            event.isPast = true;
             if (isPast) return event;
         })
     }, [filteredEvents])
+    console.log(futureEvents)
 
-
-    const Item = ({ item }) => {
+    const Item = ({ item, isFuture }) => {
         const date = new Date(item.node.date).toLocaleDateString(lang == 'de' ? "de-DE" : "en-US")
         const dateEnd = !item.node.dateEnd ? "" : new Date(item.node.dateEnd).toLocaleDateString(lang == 'de' ? "de-DE" : "en-US")
-
         return (
             <div
                 style={{ marginBottom: '3rem' }}
@@ -46,13 +47,13 @@ const Events = ({ lang, events }) => {
                                 target="_blank" href={`${item.node.link}/`}>
                                 {lang === "de" ? item.node.titleDe ? item.node.titleDe : item.node.titleEn : item.node.titleEn}
                             </a> : lang === "de" ? item.node.titleDe ? item.node.titleDe : item.node.titleEn : item.node.titleEn
-                            } </h5>
+                            } ({ (item.node.language === "de" ? (lang === "de" ? "Deutsch" : "German") : (lang === "de" ? "Englisch" : "English"))}) </h5>
 
                         <p style={{ marginTop: "-1rem" }} className="p-small">
                             <span className="text-secondary bold"> {item.node.event} </span>  {dateEnd ? `${date}-${dateEnd}` : date} {' '}
                             {item.node.slides && <span><button className="btn btn-xs has-text-color has-white-color has-background has-gray-background-color"><a style={{ color: '#fff' }} href={item.node.slides}>Slides</a></button></span>}{' '}
                             {item.node.replay && <span><button className="btn btn-xs has-text-color has-white-color has-background has-gray-background-color"><a style={{ color: '#fff' }} href={item.node.replay}>Replay</a></button></span>}
-
+                            <br />{isFuture && <span style={{ color: "#7c989a" }} className="has-background has-gray-light-background-color">&#10000; {item.node.registrationOpen ? (lang === "de" ? "Jetzt anmelden!" : "Sign up now!") : (lang === "de" ? "Anmeldung bald offen" : "Registration open soon")}</span>}
                         </p>
 
 
@@ -94,7 +95,7 @@ const Events = ({ lang, events }) => {
                     {!futureEvents.length && <div className="wrapper">
                         <div className="ptb-blog text-center"><span>No items.</span></div></div>}
                     {
-                        futureEvents.map((item) => <Item item={item} />)
+                        futureEvents.map((item) => <Item isFuture={true} item={item} />)
                     }
 
                     <h4>{lang === "de" ? "Vergangene" : "Previous"}</h4>

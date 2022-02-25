@@ -206,6 +206,7 @@ export const pageQuery = graphql`
             titleEn
             type
             link
+            registrationOpen
             language
             slides
             abstractDe {
