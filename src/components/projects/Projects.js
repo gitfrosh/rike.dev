@@ -19,6 +19,12 @@ const Projects = () => {
                 "url": "https://rike.dev/kurse",
             },
             {
+                "id": "3",
+                "title": "New WORDLE on the block",
+                "description": "The Wordle that gives back: Mint your daily result!",
+                "url": "https://wordle-on-the-block.on.fleek.co/",
+            },
+            {
                 "id": "4",
                 "title": ".. more",
                 "description": "on Github!",
@@ -34,6 +40,12 @@ const Projects = () => {
             },
             {
                 "id": "2",
+                "title": "New WORDLE on the block",
+                "description": "The Wordle that gives back: Mint your daily result!",
+                "url": "https://wordle-on-the-block.on.fleek.co/",
+            },
+            {
+                "id": "3",
                 "title": "minako",
                 "description": "is a super lightweight headless, API-first, flat-file cms written in Node.js/Next.js made for blogs and other small content-driven frontends.",
                 "url": "https://github.com/gitfrosh/minako"

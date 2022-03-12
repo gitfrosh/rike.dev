@@ -42,7 +42,7 @@ const PageTitleHome = ({ image }) => {
                         </div>
 
                         <div className="spacer p-top-lg">
-                            <p style={{ fontSize: "2rem"}}  className="p-large w-75">I'm Ulrike Exner (or just <b>Rike</b>), fullstack developer from Berlin and sometimes hosting
+                            <p style={{ fontSize: "2rem"}}  className="p-large w-75">I'm Ulrike Exner (or just <b>Rike</b>), frontend developer from Berlin and sometimes hosting
              workshops for coding beginners.
                         <br />Check out what's going on next <Link to={lang === "de" ? "/kurse" : "/courses"}>here.</Link></p>
         

@@ -49,7 +49,7 @@ const RootIndex = ({location}) => {
               ]}>
             <html lang="en" />
             <title>rike.dev - Web development and beyond | Ulrike Exner</title>
-            <meta name="description" content="I'm Ulrike Exner (or just Rike), fullstack developer from Berlin, hosting
+            <meta name="description" content="I'm Ulrike Exner (or just Rike), frontend developer from Berlin, hosting
              workshops for coding beginners." />
           </Helmet>
           <PageTitleHome image={image} />
