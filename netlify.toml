@@ -95,7 +95,7 @@
   status = 301
   
   [[redirects]]
-  from = "/2022/19/03/hack-the-web3-building-a-worlde-on-the-blockchain/"
+  from = "/2022/19/03/hack-the-web3-building-a-worlde-on-the-blockchain*"
   to = "/2022/19/03/hack-the-web3-building-a-wordle-on-the-blockchain/"
   status = 301
   
