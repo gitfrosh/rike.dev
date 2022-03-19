@@ -224,6 +224,13 @@ body {
     }
 }
 
+
+.site-main p img {
+    padding: 12px;
+    border: 1px solid #e1e1e1;
+  }
+
+
 ::selection {
     background: $body_main_element_color;
 }
