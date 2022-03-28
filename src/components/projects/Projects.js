@@ -6,18 +6,19 @@ const Projects = () => {
     const [projects, setProjects] = useState([])
     useEffect(() => {
         if (lang === "de") {
-            setProjects([{
-                "id": "1",
+            setProjects([
+                {
+                    "id": "1",
+                    "title": "Web3 & beyond",
+                    "description": "A resources collection for Web3 and Blockchain development.",
+                    "url": "https://rike.dev/web3",
+                },{
+                "id": "2",
                 "title": "The Lord of the Rings API",
                 "description": "is the biggest JSON based data source providing information about the trilogy.",
                 "url": "https://the-one-api.dev/"
             },
-            {
-                "id": "2",
-                "title": "Dein Weg in die Web-Entwicklung",
-                "description": "Online-Kurse für Anfängerinnen und Interessierte.",
-                "url": "https://rike.dev/kurse",
-            },
+            
             {
                 "id": "3",
                 "title": "New WORDLE on the block",
@@ -26,36 +27,36 @@ const Projects = () => {
             },
             {
                 "id": "4",
-                "title": ".. more",
-                "description": "on Github!",
-                "url": "https://github.com/gitfrosh/"
-            }])
+                "title": "Dein Weg in die Web-Entwicklung",
+                "description": "Online-Kurse für Anfängerinnen und Interessierte.",
+                "url": "https://rike.dev/kurse",
+            },])
 
         } else {
-            setProjects([{
+            setProjects([ {
                 "id": "1",
-                "title": "The Lord of the Rings API",
-                "description": "is the biggest JSON based data source providing information about the trilogy.",
-                "url": "https://the-one-api.dev/"
-            },
+                "title": "Web3 & beyond",
+                "description": "A resources collection for Web3 and Blockchain development.",
+                "url": "https://rike.dev/web3",
+            },{
+            "id": "2",
+            "title": "The Lord of the Rings API",
+            "description": "is the biggest JSON based data source providing information about the trilogy.",
+            "url": "https://the-one-api.dev/"
+        },,
             {
-                "id": "2",
+                "id": "3",
                 "title": "New WORDLE on the block",
                 "description": "The Wordle that gives back: Mint your daily result!",
                 "url": "https://wordle-on-the-block.on.fleek.co/",
             },
             {
-                "id": "3",
+                "id": "4",
                 "title": "minako",
                 "description": "is a super lightweight headless, API-first, flat-file cms written in Node.js/Next.js made for blogs and other small content-driven frontends.",
                 "url": "https://github.com/gitfrosh/minako"
             },
-            {
-                "id": "4",
-                "title": ".. more",
-                "description": "on Github!",
-                "url": "https://github.com/gitfrosh/"
-            }])
+           ])
         }
     }, [lang])
     return (
