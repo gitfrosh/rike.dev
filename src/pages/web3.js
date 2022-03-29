@@ -44,7 +44,8 @@ class Web3 extends React.Component {
                                              and promotes the idea of decentralized protocols, known from blockchain technology.
                                              Below you'll find my notes from months of researching, building and reading about
                                              this space. <b>Have fun exploring!</b>
-                                             <p style={{ marginTop: '3rem' }} className="p-small">If you can't see the embedded page, just visit <a href="https://rike-codes.notion.site/Web3-beyond-A-resources-collection-16358ac830ff4c8887ab5d7605ac8043" target="_blank">this Notion site.</a></p>
+                                             <p style={{ marginTop: '3rem' }} className="p-small">If you can't see the embedded page, 
+                                             just visit <a href="https://web3-resources.netlify.app/" target="_blank">this Notion site.</a></p>
 
 </p>                                    </div>
                                 </div>
@@ -54,8 +55,8 @@ class Web3 extends React.Component {
                         </div>
                     </section>
                     <section style={{ marginTop: 30} } id="notion" id="page-content">
-                    <iframe src="https://embednotion.com/embed/gqdcii9j"></iframe>
-    
+                    <iframe src="https://web3-resources.netlify.app/"></iframe>
+
 
 </section>
                     {/* <section id="page-content" className="spacer p-top-xl">
