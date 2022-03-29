@@ -50,6 +50,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-netlify',
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
