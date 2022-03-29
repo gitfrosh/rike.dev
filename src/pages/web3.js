@@ -39,7 +39,7 @@ class Web3 extends React.Component {
                                     </div>
 
                                     <div className="col align-self-center description">
-                                        <p>As an engineer or advocate, you have maybe already heard of Web3 a lot lately.
+                                        <p>As an engineer or advocate, you have maybe already heard of Web3 lately.
                                              This new version of the World Wide Web is getting a lot of hype at the moment 
                                              and promotes the idea of decentralized protocols, known from blockchain technology.
                                              Below you'll find my notes from months of researching, building and reading about
