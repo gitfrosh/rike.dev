@@ -6,7 +6,7 @@ const LoadMoreButton = ({ increasePostAmount, postAmount, posts }) => {
         return null
     }
     return (
-        <div className="loadmore spacer m-top-lg text-md-center text-center">
+        <div className="loadmore spacer m-top-xl text-md-center text-center">
             <button
                 title="Loadmore"
                 onClick={() => increasePostAmount(postAmount + 3)}

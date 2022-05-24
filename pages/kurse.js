@@ -53,6 +53,7 @@ const Kurse = ({ events }) => {
                     content="initial-scale=1.0, width=device-width"
                 />
                 <link rel="canonical" href={"https://rike.dev/kurse/"} />
+                <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
                     content="Lerne in kleinen Kursen jetzt alles was du für deinen Einstieg in die Webentwickung brauchst: persönlich, professionell praxisnah & nur für Frauen"

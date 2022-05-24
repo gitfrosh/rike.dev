@@ -13,6 +13,7 @@ const Courses = ({ events }) => {
                 <title>rike.dev - Web development courses, workshops & talks</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="canonical" href={"https://rike.dev/courses/"} />
+                <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
                     content="Courses and workshops for coding beginners - and empowering women by the way."

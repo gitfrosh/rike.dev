@@ -9,6 +9,7 @@ const Contact = () => {
     <>
       <Head>
         <title>rike.dev - Contact</title>
+        <link rel="manifest" href="/manifest.json" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Layout>

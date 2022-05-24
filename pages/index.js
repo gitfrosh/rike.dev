@@ -14,6 +14,7 @@ const RootIndex = ({ posts }) => {
         <title>rike.dev - Web development and beyond | Ulrike Exner</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="canonical" href={"https://rike.dev"} />
+        <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
           content="I'm Ulrike Exner (or just Rike), frontend developer from Berlin, hosting

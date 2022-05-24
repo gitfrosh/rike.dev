@@ -10,6 +10,7 @@ class Page404 extends React.Component {
             <>
                 <Head>
                     <title>rike.dev - 404</title>
+                    <link rel="manifest" href="/manifest.json" />
                     <meta
                         name="viewport"
                         content="initial-scale=1.0, width=device-width"

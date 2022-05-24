@@ -20,6 +20,7 @@ export default function PostWrapper({ post, location }) {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="canonical" href={`https://rike.dev/${post.slug}/`} />
                 <meta name="description" content={post.description} />
+                <link rel="manifest" href="/manifest.json" />
             </Head>
             <Layout>
                 <PageTitleJournalSingle text={post.title} />

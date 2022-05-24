@@ -15,6 +15,7 @@ const Web3 = () => {
                     name="description"
                     content="Resources, links, information about the decentralized web and blockchain development."
                 />
+                <link rel="manifest" href="/manifest.json" />
             </Head>
             <Layout>
                 <section

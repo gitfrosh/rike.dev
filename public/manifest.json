@@ -1,0 +1,16 @@
+{
+    "name": "rike.dev - Web development & beyond",
+    "short_name": "rike.dev",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#90cdf4",
+    "theme_color": "#90cdf4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/logo-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

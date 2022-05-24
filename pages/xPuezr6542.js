@@ -8,10 +8,6 @@ class Prelaunch extends React.Component {
     return (
       <>
         <Layout location={this.props.location}>
-          {/* <Helmet>
-            <title>rike.dev</title>
-          </Helmet> */}
-
           <section id="page-content" className="block spacer p-top-xl">
             <div className="wrapper">
               <center>
