@@ -103,5 +103,36 @@
   from = "/2022/19/03/hack-the-web3-building-a-worlde-on-the-blockchain*"
   to = "/2022/19/03/hack-the-web3-building-a-wordle-on-the-blockchain/"
   status = 301
-  
 
+  
+ # switch to next and new url structure
+
+  [[redirects]]
+  from = "/2022/19/03/hack-the-web3-building-a-wordle-on-the-blockchain/"
+  to = "/blog/hack-the-web3-building-a-wordle-on-the-blockchain"
+  status = 301
+
+  [[redirects]]
+  from = "/2019/02/11/smart-home-setup-to-track-indoor-temperatures-and-humidity-with-sensors-raspberry-pi-mqtt-node-js-vue-js-and-chart-js/"
+  to = "/blog/hack-the-web3-building-a-wordle-on-the-blockchain/"
+  status = 301
+
+  [[redirects]]
+  from = "/2019/02/11/hardware-sensors-receiver-raspberry-pi-for-a-basic-tracking-tool-on-temperature-and-humidity/"
+  to = "/blog/hardware-sensors-receiver-raspberry-pi-for-a-basic-tracking-tool-on-temperature-and-humidity/"
+  status = 301
+
+  [[redirects]]
+  from = "/2019/02/11/display-smart-home-data-in-a-quasar-vue-js-and-chart-js-powered-web-application/"
+  to = "/blog/display-smart-home-data-in-a-quasar-vue-js-and-chart-js-powered-web-application/"
+  status = 301
+
+  [[redirects]]
+  from = "/2019/02/07/smart-home-sensor-data-with-mqtt-broker-mosquitto-and-a-node-js-backend-application/"
+  to = "/blog/smart-home-sensor-data-with-mqtt-broker-mosquitto-and-a-node-js-backend-application/"
+  status = 301
+
+    [[redirects]]
+  from = "/2019/04/20/get-a-csv-download-out-of-postgresql-or-lowdb-database-on-node-js/"
+  to = "/blog/get-a-csv-download-out-of-postgresql-or-lowdb-database-on-node-js/"
+  status = 301
