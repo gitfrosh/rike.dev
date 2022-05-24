@@ -13,7 +13,7 @@ class Prelaunch extends React.Component {
               <center>
                 <h4>
 
-                  Thank you for your subscription! 🎉
+                  Vielen Dank für dein Abo! 🎉
 
                 </h4>
                 <br />
@@ -21,7 +21,7 @@ class Prelaunch extends React.Component {
                 <br />
                 <br />
                 <br />
-                <p><em>Do you speak German?</em> <br />Hier geht's zur kostenlosen Web Developer Roadmap:</p>
+                <p>Hier geht's zur kostenlosen Web Developer Roadmap:</p>
                 <p>
                   <Link href={`/rike.dev-Roadmap.pdf`}>
 

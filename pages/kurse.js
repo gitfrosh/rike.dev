@@ -81,8 +81,9 @@ const Kurse = ({ events }) => {
                                 </div>
 
                                 <div className="col align-self-center description">
-                                    <h4>Dein Weg in die Web-Entwicklung</h4>
-
+                                    <h4>
+                                        wom3n hack!
+                                    </h4>
                                     <p>
                                         Du hast Lust, dich im Bereich Programmierung oder
                                         Web-Entwicklung weiterzubilden, aber weißt einfach nicht, wo
@@ -100,13 +101,12 @@ const Kurse = ({ events }) => {
                             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                 <div className="card">
                                     <div className="card-body p-large">
-                                        <h5>Deine Roadmap jetzt kostenlos</h5>
-                                        <p className="p-small mt-0">
+                                        <h4>wom3n hack Newsletter</h4>
+                                        <p className="p mt-0">
                                             <span>
                                                 <br />
-                                                Sichere dir die <b>kostenlose</b> Web Developer Roadmap
-                                                als PDF. Erfahre, welches Wissen du brauchst, um dich im
-                                                Bereich Web-Entwicklung fit zu machen.
+                                                Verpasse keine Kurse und Events sowie weitere spannende News
+                                                zum Thema #WomenWhoCode mehr!
                                             </span>
                                         </p>
                                         <p>
@@ -115,7 +115,7 @@ const Kurse = ({ events }) => {
                                                 onClick={() => openModal()}
                                                 className="btn btn-sm has-text-color has-white-color has-background has-gray-background-color"
                                             >
-                                                Download
+                                                Abonnieren
                                             </button>
                                         </p>
                                     </div>
@@ -162,12 +162,12 @@ const Kurse = ({ events }) => {
                             </center>
                         ) : (
                             <center>
-                                <h5>Deine Roadmap jetzt kostenlos</h5>
-                                <br />
+                                <h5>wom3n hack Newsletter</h5>
                                 <p>
-                                    Erfahre Schritt für Schritt, welche Teilbereiche, Technologien
-                                    und Tools es rund um das Thema Web-Entwicklung zu entdecken
-                                    gibt.
+                                    Mit deiner Anmeldung stimmst du zu, dass ich dir
+                                    unregelmäßig (ca. 3x jährlich) meinen Newsletter zum Thema #WomenWhoCode
+                                    zusende.
+
                                 </p>
                                 <br />
                                 <div className="input-with-icon text-center">
@@ -191,17 +191,13 @@ const Kurse = ({ events }) => {
                                                 type="submit"
                                                 className="btn btn-sm has-text-color has-white-color has-background has-gray-background-color"
                                             >
-                                                Download
+                                                Absenden
                                             </button>
                                         </center>
                                     </form>
                                 </div>
                                 <br />
                                 <p style={{ marginTop: "3rem" }} className="p-small">
-                                    Mit deiner Anmeldung stimmst du außerdem zu, dass ich dir
-                                    unregelmäßig meinen Newsletter zum Thema #WomenWhoCode
-                                    zusende.
-                                    <br />
                                     Mehr zum Thema{" "}
                                     <a href="https://rike.dev/legal">Datenschutz</a>.
                                 </p>

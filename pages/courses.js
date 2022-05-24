@@ -42,8 +42,7 @@ const Courses = ({ events }) => {
 
                                 <div className="col align-self-center description">
                                     <h4>
-                                        Would you like to dive into programming and software
-                                        development as a newbie?
+                                        wom3n hack!
                                     </h4>
 
                                     <p>
