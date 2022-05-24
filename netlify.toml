@@ -136,3 +136,68 @@
   from = "/2019/04/20/get-a-csv-download-out-of-postgresql-or-lowdb-database-on-node-js/"
   to = "/blog/get-a-csv-download-out-of-postgresql-or-lowdb-database-on-node-js/"
   status = 301
+
+  [[redirects]]
+  from = "/2020/06/19/headless-api-first-wtf-how-i-left-wordpress-and-built-my-own-content-management-system/"
+  to = "/blog/headless-api-first-wtf-how-i-left-wordpress-and-built-my-own-content-management-system/"
+  status = 301
+
+ [[redirects]]
+  from = "/2019/04/20/setup-postgresql-database-and-api-for-node-js/"
+  to = "/blog/setup-postgresql-database-and-api-for-node-js/"
+  status = 301
+
+[[redirects]]
+  from = "/2019/06/26/how-to-build-a-twitter-bot-with-node-js-fast/"
+  to = "/blog/how-to-build-a-twitter-bot-with-node-js-fast/"
+  status = 301
+
+ [[redirects]]
+  from = "/2016/06/13/die-clippy-die-intelligent-personal-assistants/"
+  to = "/blog/die-clippy-die-intelligent-personal-assistants/"
+  status = 301
+
+ [[redirects]]
+  from = "/2015/12/02/mobile-banking-altersgruppenspezifisch/"
+  to = "/blog/mobile-banking-altersgruppenspezifisch/"
+  status = 301
+
+ [[redirects]]
+  from = "/2017/06/01/nutzerzentrierte-entwicklung-eines-prototypischen-web-monitoring-tools/"
+  to = "/blog/nutzerzentrierte-entwicklung-eines-prototypischen-web-monitoring-tools/"
+  status = 301
+
+ [[redirects]]
+  from = "/2021/05/04/rest-apis-for-absolute-beginners/"
+  to = "/blog/rest-apis-for-absolute-beginners/"
+  status = 301
+
+ [[redirects]]
+  from = "/2021/06/08/how-to-build-a-friendly-social-bot/"
+  to = "/blog/how-to-build-a-friendly-social-bot/"
+  status = 301
+
+ [[redirects]]
+  from = "/2021/26/08/mit-dem-terminal-arbeiten-und-python-installieren/"
+  to = "/blog/mit-dem-terminal-arbeiten-und-python-installieren/"
+  status = 301
+
+[[redirects]]
+  from = "/2018/07/15/node-js-installieren-und-einen-webserver-starten/"
+  to = "/blog/node-js-installieren-und-einen-webserver-starten/"
+  status = 301
+
+ [[redirects]]
+  from = "/2021/08/26/einen-einfachen-webserver-mit-python-installieren/"
+  to = "/blog/einen-einfachen-webserver-mit-python-installieren/"
+  status = 301
+
+ [[redirects]]
+  from = "/2019/07/18/100daysofcode-a-recap/"
+  to = "/blog/100daysofcode-a-recap/"
+  status = 301
+
+[[redirects]]
+  from = "/2022/29/03/exploring-web3-safe-and-sound-starter-guide-not-only-for-software-developers/"
+  to = "/blog/exploring-web3-safe-and-sound-starter-guide-not-only-for-software-developers/"
+  status = 301
