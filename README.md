@@ -1,73 +1,34 @@
-# rike.dev
-## Features
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-* Simple content model and structure. Easy to adjust to your needs.
-* Contentful integration using our [Sync API](https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/synchronization/initial-synchronization-of-entries-of-a-specific-content-type)
-* Using our [Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/).
-* Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
+## Getting Started
 
-## Contribution
+First, run the development server:
 
-This project is part of [contentful-userland](https://github.com/contentful-userland) which means that we’re always open to contributions **and you can be part of userland and shape the project yourself after your first merged pull request**. You can learn more about how contentful userland is organized by visiting [our about repository](https://github.com/contentful-userland/about).
-
-## Requirements
-
-To use this project you have to have a Contentful account. If you don't have one yet you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
-
-## Getting started
-
-Install [Yarn](https://yarnpkg.com/en/docs/install) (if you haven't already).
-
-### Get the source code and install dependencies.
-
-```
-$ git clone git@github.com:contentful-userland/gatsby-contentful-starter.git
-$ yarn install
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-Or use the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-$ gatsby new contentful-starter https://github.com/contentful-userland/gatsby-contentful-starter
-```
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-### Set up of the needed content model and create a configuration file
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-This project comes with a Contentful setup command `yarn run setup`.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-![Command line dialog of the yarn run setup command](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/setup.jpg "Command line dialog of the yarn run setup command")
+## Learn More
 
-This command will ask you for a space ID, and access tokens for the Contentful Management and Delivery API and then import the needed content model into the space you define and write a config file (`./contentful.json`).
+To learn more about Next.js, take a look at the following resources:
 
-`yarn run setup` automates that for you but if you want to do it yourself rename `.contentful.json.sample` to `.contentful.json` and add your configuration in this file.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Crucial Commands
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-This project comes with a few handy commands for linting and code fixing. The most important ones are the ones to develop and ship code. You can find the most important commands below.
+## Deploy on Vercel
 
-### `yarn run dev`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Run in the project locally.
-
-### `yarn run build`
-
-Run a production build into `./public`. The result is ready to be put on any static hosting you prefer.
-
-### `yarn run deploy`
-
-Run a production build into `./public` and publish the site to GitHub pages.
-
-### `yarn run cleanup-repository`
-
-Removes all dependencies, scripts and data from the installation script.
-
-## Roadmap
-
-- [x] [make the starter completely responsive](https://github.com/contentful-userland/gatsby-contentful-starter/issues/2)
-- [ ] [include tags](https://github.com/contentful-userland/gatsby-contentful-starter/issues/3)
-- [x] [support traced placeholders](https://github.com/contentful-userland/gatsby-contentful-starter/issues/4)
-- [ ] [add i18n](https://github.com/contentful-userland/gatsby-contentful-starter/issues/6)
-
-## Other resources
-
-- Tutorial video series ["Building a blazing fast website with GatsbyJS and Contentful"](https://www.youtube.com/watch?v=Ek4o40w1tH4&list=PL8KiuH6vpACV-F7jXribe4YveGBhBeG9A) by @Khaledgarbaya
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

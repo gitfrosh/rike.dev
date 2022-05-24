@@ -1,0 +1,17 @@
+.notion {
+  font-family: "Lora-Regular", sans-serif !important;
+}
+
+.notion-header {
+  width: var(--notion-max-width) !important;
+  margin: 0 auto !important;
+}
+
+.notion-page-icon-hero.notion-page-icon-span {
+  display: none !important;
+}
+
+.notion-page-no-cover {
+  margin-top: 0 !important;
+  padding-top: 26px;
+}

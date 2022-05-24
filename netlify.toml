@@ -25,6 +25,11 @@
   status = 301
 
 [[redirects]]
+  from = "/kurse/webentwicklerin-werden"
+  to = "/kurse/"
+  status = 301
+
+[[redirects]]
   from = "/kurse/dein-weg-in-die-webentwicklung"
   to = "/kurse/"
   status = 301
