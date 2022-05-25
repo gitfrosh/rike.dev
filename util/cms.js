@@ -17,7 +17,7 @@ export async function fetchEntries() {
 
 export async function fetchEvents() {
     const entries = await client.getEntries({
-        order: '-fields.dateEnd',
+        order: 'fields.date',
         content_type: "event",
     })
     if (entries.items) return entries.items

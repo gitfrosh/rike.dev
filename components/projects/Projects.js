@@ -75,7 +75,7 @@ const Projects = () => {
                                 <div key={key} className="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div className="card">
                                         <div style={{ border: item.featured && '5px solid #ff1e52' }} className="card-body p-large">
-                                            <h4><a href={item.url}>{item.title}</a></h4>
+                                            <h4><a target="_blank" rel="noopener noreferrer" href={item.url}>{item.title}</a></h4>
                                             <p className="mt-0">{item.description}</p>
                                         </div>
                                     </div>

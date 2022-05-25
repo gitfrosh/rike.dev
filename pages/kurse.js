@@ -7,6 +7,7 @@ import { fetchEvents } from "../util/cms";
 import workshops from "../images/workshops.png";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 
 const customStyles = {
     content: {
@@ -199,7 +200,7 @@ const Kurse = ({ events }) => {
                                 <br />
                                 <p style={{ marginTop: "3rem" }} className="p-small">
                                     Mehr zum Thema{" "}
-                                    <a href="https://rike.dev/legal">Datenschutz</a>.
+                                    <Link href="/legal">Datenschutz</Link>.
                                 </p>
 
                                 <p>

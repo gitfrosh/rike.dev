@@ -31,7 +31,7 @@ const FooterMenu = () => {
                 {dataFooterMenu && dataFooterMenu.map((item, key) => {
                     return (
                         <li key={key}>
-                            <a
+                            <a target="_blank" rel="noopener noreferrer"
                                 title={item.title}
                                 className="btn btn-link transform-scale-h border-0 p-0"
                                 href={item.link}

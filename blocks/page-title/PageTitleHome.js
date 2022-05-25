@@ -51,11 +51,22 @@ const PageTitleHome = () => {
                         <div className="spacer p-top-lg">
                             <p style={{ fontSize: "2rem" }} className="p-large w-75">
                                 I'm Ulrike Exner (or just <b>Rike</b>), frontend developer from
-                                Berlin @<Link href="https://www.iav.com/">IAV</Link>, currently
-                                diving into everything Web3 @
-                                <Link href="https://twitter.com/womenbuildweb3">
+                                Berlin @
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.iav.com/"
+                                >
+                                    IAV
+                                </a>
+                                , currently diving into everything Web3 @
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://twitter.com/womenbuildweb3"
+                                >
                                     WBW3
-                                </Link>
+                                </a>
                                 . Checkout upcoming coding workshops and talks{" "}
                                 <Link href={lang === "de" ? "/kurse" : "/courses"}>here.</Link>
                             </p>
@@ -71,7 +82,6 @@ const PageTitleHome = () => {
                                             src={rike}
                                             className="img-fluid"
                                             alt="Ulrike Exner"
-
                                         />
                                     </div>
                                 </div>
