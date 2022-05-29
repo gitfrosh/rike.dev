@@ -13,7 +13,8 @@ module.exports = {
         `/rike.dev-Roadmap.pdf`,
         `/rike.dev-Syllabus.pdf`,
         `/rike.dev-Webinar.pdf`,
-        `/blog/[slug]`
+        `/blog/[slug]`,
+        `/blog/`
 
     ],
     robotsTxtOptions: {
@@ -29,6 +30,8 @@ module.exports = {
                     "/kurse/buchung-bestaetigt",
                     "/kurse/xPuezr6542",
                     "/legal",
+                    `/blog/[slug]`,
+                    `/blog/`
                 ],
             },
         ],
