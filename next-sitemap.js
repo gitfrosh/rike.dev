@@ -13,6 +13,8 @@ module.exports = {
         `/rike.dev-Roadmap.pdf`,
         `/rike.dev-Syllabus.pdf`,
         `/rike.dev-Webinar.pdf`,
+        `/blog/[slug]`
+
     ],
     robotsTxtOptions: {
         additionalSitemaps: [
