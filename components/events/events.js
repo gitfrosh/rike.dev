@@ -186,7 +186,7 @@ const Events = ({ lang, events }) => {
                             </div>
                         </div>
                     )}
-                    {pastEvents.map((item, i) => (
+                    {pastEvents && pastEvents.reverse().map((item, i) => (
                         <Item key={i} item={item} />
                     ))}
                 </div>

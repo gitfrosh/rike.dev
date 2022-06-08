@@ -3,11 +3,10 @@ module.exports = {
     generateRobotsTxt: true,
     changefreq: "daily",
     exclude: [
-        '/server-sitemap.xml',
-        `404/`,
+        `/404/`,
         `/legal/`,
         `/404.html`,
-        `/xPuezr6542`,
+        `/xPuezr6542/`,
         `/offline-plugin-app-shell-fallback/`,
         `/xPuezr6542/`,
         `/rike.dev-Roadmap.pdf`,
@@ -18,9 +17,6 @@ module.exports = {
 
     ],
     robotsTxtOptions: {
-        additionalSitemaps: [
-            'https://rike.dev/server-sitemap.xml',
-        ],
         policies: [
             {
                 userAgent: "*",
@@ -29,8 +25,8 @@ module.exports = {
                     "/kurse/rike.dev-Roadmap.pdf",
                     "/kurse/buchung-bestaetigt",
                     "/kurse/xPuezr6542",
-                    "/legal",
-                    `/blog/[slug]`,
+                    "/legal/",
+                    `/blog/[slug]/`,
                     `/blog/`
                 ],
             },
