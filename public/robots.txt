@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Disallow: /kurse/rike.dev-Syllabus.pdf
+Disallow: /kurse/rike.dev-Roadmap.pdf
+Disallow: /kurse/buchung-bestaetigt
+Disallow: /kurse/xPuezr6542
+Disallow: /legal/
+Disallow: /blog/[slug]/
+Disallow: /blog/
+
+# Host
+Host: https://rike.dev
+
+# Sitemaps
+Sitemap: https://rike.dev/sitemap.xml

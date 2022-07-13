@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^4.12.1",
     "@next/bundle-analyzer": "^12.1.6",
     "animate.css": "^4.1.1",
     "bootstrap": "^4.3.1",
