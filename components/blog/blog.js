@@ -23,6 +23,7 @@ const Blog = ({ posts }) => {
 
     const filteredPosts = useMemo(() => posts?.filter(item => {
         if (!item) return;
+        if (!item.featured) return;
         if ((isGermanSelected && item.language === "de") || (isEnglishSelected && item.language === "en")) {
             return item
         }
