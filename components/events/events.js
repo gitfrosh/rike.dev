@@ -1,9 +1,12 @@
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import LoadMoreButtonEvents from "../loadmore/LoadMoreEvents";
 
 const Events = ({ lang, events }) => {
     const [isGermanSelected, toggleGerman] = useState(true);
     const [isEnglishSelected, toggleEnglish] = useState(true);
+    const [eventsAmount, increaseEventsAmount] = useState(6)
+
     const filteredEvents = useMemo(
         () =>
             events.filter((item) => {
@@ -17,6 +20,7 @@ const Events = ({ lang, events }) => {
         [events, isGermanSelected, isEnglishSelected]
     );
 
+
     const futureEvents = useMemo(() => {
         return filteredEvents.filter((event) => {
             const isFuture = Date.parse(event.date) - Date.parse(new Date()) > 0;
@@ -27,12 +31,14 @@ const Events = ({ lang, events }) => {
     }, [filteredEvents]);
 
     const pastEvents = useMemo(() => {
-        return filteredEvents.filter((event) => {
+        const events = filteredEvents.filter((event) => {
             const isPast = Date.parse(event.date) - Date.parse(new Date()) < 0;
             event.isPast = true;
             if (isPast) return event;
         });
-    }, [filteredEvents]);
+        return events.slice(-eventsAmount)
+    }, [filteredEvents, eventsAmount]);
+
 
     const Item = ({ item, isFuture }) => {
         if (!item) return null;
@@ -189,6 +195,9 @@ const Events = ({ lang, events }) => {
                     {pastEvents && pastEvents.reverse().map((item, i) => (
                         <Item key={i} item={item} />
                     ))}
+                    <div className="text-center">
+                        <LoadMoreButtonEvents events={events} eventsAmount={eventsAmount} increaseEventsAmount={increaseEventsAmount} />
+                    </div>
                 </div>
             </div>
         </div>

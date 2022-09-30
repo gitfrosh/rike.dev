@@ -43,10 +43,9 @@ const Web3 = () => {
                                         As an engineer or advocate, you have maybe already heard of
                                         Web3 lately. This new version of the World Wide Web is
                                         getting a lot of hype at the moment and promotes the idea of
-                                        decentralized protocols, known from blockchain technology.
-                                        Below you'll find my notes from months of researching,
-                                        building and reading about this space.{" "}
-                                        <b>Have fun exploring!</b>
+                                        decentralized protocols known from blockchain technology.
+                                        Below are my notes from months of researching, building, and
+                                        reading about this space. <b>Have fun exploring!</b>
                                         <p style={{ marginTop: "3rem" }} className="p-small">
                                             If you can't see the embedded page, just visit{" "}
                                             <a

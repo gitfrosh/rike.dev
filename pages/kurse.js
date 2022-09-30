@@ -1,63 +1,60 @@
-import React, { useState } from "react";
-import Layout from "../components/layout";
-import Events from "../components/events/events";
-import Modal from "react-modal";
-import { submit } from "../util/helpers";
-import { fetchEvents } from "../util/cms";
-import workshops from "../images/workshops.png";
-import Image from "next/image";
-import Head from "next/head";
-import Link from "next/link";
+import React, { useState } from 'react'
+import Layout from '../components/layout'
+import Events from '../components/events/events'
+import Modal from 'react-modal'
+import { submit } from '../util/helpers'
+import { fetchEvents } from '../util/cms'
+import workshops from '../images/workshops.png'
+import Image from 'next/image'
+import Head from 'next/head'
+import Link from 'next/link'
 
 const customStyles = {
     content: {
         zIndex: 2,
-        top: "50%",
-        left: "50%",
-        right: "auto",
-        bottom: "auto",
-        marginRight: "-50%",
-        transform: "translate(-50%, -50%)",
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
     },
-};
+}
 
 const Kurse = ({ events }) => {
-    const [email, setEmail] = useState();
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [callback, setCallback] = useState(false);
+    const [email, setEmail] = useState()
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+    const [callback, setCallback] = useState(false)
 
     const submitForm = (e) => {
-        e.preventDefault();
-        submit(email, setCallback);
-    };
+        e.preventDefault()
+        submit(email, setCallback)
+    }
 
     const openModal = () => {
-        setModalIsOpen(true);
-    };
+        setModalIsOpen(true)
+    }
 
     const changeEmail = (e) => {
-        setEmail(e.target.value);
-    };
+        setEmail(e.target.value)
+    }
 
     const closeModal = () => {
-        setModalIsOpen(false);
-        setEmail(undefined);
-        setCallback(undefined);
-    };
+        setModalIsOpen(false)
+        setEmail(undefined)
+        setCallback(undefined)
+    }
 
     return (
         <>
             <Head>
-                <title>rike.dev - Webentwicklung: Kurse für Frauen</title>
-                <meta
-                    name="viewport"
-                    content="initial-scale=1.0, width=device-width"
-                />
-                <link rel="canonical" href={"https://rike.dev/kurse/"} />
+                <title>rike.dev - Webentwicklung & Web3: Workshops</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <link rel="canonical" href={'https://rike.dev/kurse/'} />
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
-                    content="Lerne in kleinen Kursen jetzt alles was du für deinen Einstieg in die Webentwickung brauchst: persönlich, professionell praxisnah & nur für Frauen"
+                    content="Kurse für Interessierte im Bereich Webentwicklung, Programmierung, Web3 und Blockchain."
                 />
             </Head>
             <Layout>
@@ -82,16 +79,16 @@ const Kurse = ({ events }) => {
                                 </div>
 
                                 <div className="col align-self-center description">
-                                    <h4>
-                                        wom3n hack!
-                                    </h4>
+                                    <h5>Web Development und Web3</h5>
                                     <p>
-                                        Du hast Lust, dich im Bereich Programmierung oder
-                                        Web-Entwicklung weiterzubilden, aber weißt einfach nicht, wo
-                                        du anfangen sollst? Ich biete regelmäßig Kurse, Workshops
-                                        und Webinare für Interessierte und Anfängerinnen* an. Schau
-                                        in die Veranstaltungsliste unten!
+                                        Du hast Lust, dich im Bereich Programmierung,
+                                        Web-Entwicklung oder Web3 / Blockchain weiterzubilden, aber weißt nicht, wo
+                                        du anfangen sollst? Ich biete in unregelmäßigen Abständen Kurse, Workshops
+                                        und Talks für Interessierte und Anfängerinnen* an.
                                     </p>
+                                </div>                                <div class="col-sm-4">
+
+
                                 </div>
                             </div>
                         </div>
@@ -106,8 +103,8 @@ const Kurse = ({ events }) => {
                                         <p className="p mt-0">
                                             <span>
                                                 <br />
-                                                Verpasse keine Kurse und Events sowie weitere spannende News
-                                                zum Thema #WomenWhoCode mehr!
+                                                Verpasse keine Kurse und Events sowie weitere spannende
+                                                News zum Thema #WomenWhoCode mehr!
                                             </span>
                                         </p>
                                         <p>
@@ -123,12 +120,12 @@ const Kurse = ({ events }) => {
                                 </div>
                             </div>
                         </center>
-                        <Events lang={"de"} events={events} />
+                        <Events lang={'de'} events={events} />
                     </div>
                 </section>
                 <section>
                     <center>
-                        <p style={{ marginTop: "3rem" }} className="p-small">
+                        <p style={{ marginTop: '3rem' }} className="p-small">
                             * Die Zielgruppe schließt ein: Frauen, inter, nichtbinär, trans
                             und agender Personen.
                         </p>
@@ -141,7 +138,7 @@ const Kurse = ({ events }) => {
                 contentLabel="Example Modal"
             >
                 <section
-                    style={{ width: "50rem" }}
+                    style={{ width: '50rem' }}
                     id="page-content"
                     className="spacer p-top-lg p-bottom-lg"
                 >
@@ -152,7 +149,7 @@ const Kurse = ({ events }) => {
                                 <br />
                                 <br />
                                 <p>
-                                    {" "}
+                                    {' '}
                                     <button
                                         onClick={() => closeModal()}
                                         className="btn btn-xs has-background has-white-background-color"
@@ -165,10 +162,9 @@ const Kurse = ({ events }) => {
                             <center>
                                 <h5>wom3n hack Newsletter</h5>
                                 <p>
-                                    Mit deiner Anmeldung stimmst du zu, dass ich dir
-                                    unregelmäßig (ca. 3x jährlich) meinen Newsletter zum Thema #WomenWhoCode
+                                    Mit deiner Anmeldung stimmst du zu, dass ich dir unregelmäßig
+                                    (ca. 3x jährlich) meinen Newsletter zum Thema #WomenWhoCode
                                     zusende.
-
                                 </p>
                                 <br />
                                 <div className="input-with-icon text-center">
@@ -198,9 +194,8 @@ const Kurse = ({ events }) => {
                                     </form>
                                 </div>
                                 <br />
-                                <p style={{ marginTop: "3rem" }} className="p-small">
-                                    Mehr zum Thema{" "}
-                                    <Link href="/legal">Datenschutz</Link>.
+                                <p style={{ marginTop: '3rem' }} className="p-small">
+                                    Mehr zum Thema <Link href="/legal">Datenschutz</Link>.
                                 </p>
 
                                 <p>
@@ -218,19 +213,19 @@ const Kurse = ({ events }) => {
                 </section>
             </Modal>
         </>
-    );
-};
+    )
+}
 
-export default Kurse;
+export default Kurse
 
 export async function getStaticProps() {
-    const res = await fetchEvents();
+    const res = await fetchEvents()
     const events = await res.map((p) => {
-        return p.fields;
-    });
+        return p.fields
+    })
     return {
         props: {
             events,
         },
-    };
+    }
 }

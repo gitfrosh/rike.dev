@@ -16,7 +16,8 @@ const Courses = ({ events }) => {
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
-                    content="Courses and workshops for coding beginners - and empowering women by the way."
+                    content="Courses and workshops for coding beginners and folks that 
+                    like to find out about web development, web3, and blockchain - and empowering women by the way."
                 />
             </Head>
             <Layout>
@@ -42,13 +43,14 @@ const Courses = ({ events }) => {
 
                                 <div className="col align-self-center description">
                                     <h4>
-                                        wom3n hack!
+                                        Web development & Web3
                                     </h4>
 
                                     <p>
-                                        I love to inspire more women* to get into coding and try out
-                                        web development. Thus, I give workshops for beginners and
-                                        host extensive trainings in German or English at irregular
+                                        I love to inspire more women* to get into coding, try out
+                                        web development and break into web3 / blockchain. Thus,
+                                        I give workshops for beginners and
+                                        host extensive training in German or English at irregular
                                         intervals.
                                     </p>
                                 </div>

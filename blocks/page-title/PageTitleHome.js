@@ -67,7 +67,7 @@ const PageTitleHome = () => {
                                 >
                                     WBW3
                                 </a>
-                                . Checkout upcoming coding workshops and talks{" "}
+                                . Check out upcoming coding workshops and talks{" "}
                                 <Link href={lang === "de" ? "/kurse" : "/courses"}>here.</Link>
                             </p>
                         </div>
