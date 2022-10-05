@@ -18,7 +18,7 @@ export default function PostWrapper({ post, location }) {
             <Head>
                 <title>rike.dev - {post.title}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <link rel="canonical" href={`https://rike.dev/${post.slug}/`} />
+                <link rel="canonical" href={`https://rike.dev/blog/${post.slug}/`} />
                 <meta name="description" content={post.description} />
                 <link rel="manifest" href="/manifest.json" />
             </Head>
