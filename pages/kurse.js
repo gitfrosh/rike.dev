@@ -92,10 +92,10 @@ const Kurse = ({ events }) => {
                                 </div>
                             </div>
                         </div>
+                        {/* <br />
                         <br />
-                        <br />
-                        <br />
-                        <center>
+                        <br /> */}
+                        {/* <center>
                             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                 <div className="card">
                                     <div className="card-body p-large">
@@ -119,7 +119,7 @@ const Kurse = ({ events }) => {
                                     </div>
                                 </div>
                             </div>
-                        </center>
+                        </center> */}
                         <Events lang={'de'} events={events} />
                     </div>
                 </section>

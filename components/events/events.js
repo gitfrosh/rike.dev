@@ -141,7 +141,7 @@ const Events = ({ lang, events }) => {
     };
 
     return (
-        <div id="blog" className="bg-gray-light block spacer p-top-xl">
+        <div id="blog" className="bg-gray-light block spacer p-top-lg">
             <div className="wrapper">
                 <h2 className="text-right">
                     <button
