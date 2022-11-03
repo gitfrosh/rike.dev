@@ -2,38 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { getBrowserLanguage } from '../../util/helpers';
 
 const Projects = () => {
-    const [lang] = useState(getBrowserLanguage())
     const [projects, setProjects] = useState([])
     useEffect(() => {
-        if (lang === "de") {
-            setProjects([
-                {
-                    "id": "1",
-                    "title": "Web3 & beyond",
-                    "description": "A resources collection for Web3 and Blockchain development.",
-                    "url": "https://rike.dev/web3",
-                }, {
-                    "id": "2",
-                    "title": "The Lord of the Rings API",
-                    "description": "is the biggest JSON based data source providing information about the trilogy.",
-                    "url": "https://the-one-api.dev/"
-                },
-
-                {
-                    "id": "3",
-                    "title": "New WORDLE on the block",
-                    "description": "The Wordle that gives back: Mint your daily result!",
-                    "url": "https://wordle-on-the-block.on.fleek.co/",
-                },
-                {
-                    "id": "4",
-                    "title": "wom3n hack",
-                    "description": "Online-Kurse für Coding-Anfängerinnen und Interessierte.",
-                    "url": "https://rike.dev/kurse",
-                },])
-
-        } else {
-            setProjects([{
+        setProjects([
+            {
                 "id": "1",
                 "title": "Web3 & beyond",
                 "description": "A resources collection for Web3 and Blockchain development.",
@@ -43,7 +15,8 @@ const Projects = () => {
                 "title": "The Lord of the Rings API",
                 "description": "is the biggest JSON based data source providing information about the trilogy.",
                 "url": "https://the-one-api.dev/"
-            }, ,
+            },
+
             {
                 "id": "3",
                 "title": "New WORDLE on the block",
@@ -52,13 +25,11 @@ const Projects = () => {
             },
             {
                 "id": "4",
-                "title": "minako",
-                "description": "is a super lightweight headless, API-first, flat-file cms written in Node.js/Next.js made for blogs and other small content-driven frontends.",
-                "url": "https://github.com/gitfrosh/minako"
-            },
-            ])
-        }
-    }, [lang])
+                "title": "Courses, Talks & Workshops",
+                "description": "I'm hosting workshops, talks, and extensive trainings in German or English.",
+                "url": "https://rike.dev/courses",
+            },])
+    }, [])
     return (
         <div id="awards" className="block spacer p-top-xl">
             <div className="wrapper">
