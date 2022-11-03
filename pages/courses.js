@@ -16,8 +16,7 @@ const Courses = ({ events }) => {
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
-                    content="Courses and workshops for coding beginners and folks that 
-                    like to find out about web development, web3, and blockchain - and empowering women by the way."
+                    content="Courses and workshops about web development, web3, and blockchain."
                 />
             </Head>
             <Layout>
@@ -47,11 +46,9 @@ const Courses = ({ events }) => {
                                     </h4>
 
                                     <p>
-                                        I love to inspire more women* to get into coding, try out
-                                        web development and break into web3 / blockchain. Thus,
-                                        I give workshops for beginners and
-                                        host extensive training in German or English at irregular
-                                        intervals.
+                                        I'm hosting workshops, talks, and
+                                        extensive training in German or English at irregular
+                                        intervals, and cover topics such as Web development, React, Frontend, Web3, and Blockchain.
                                     </p>
                                 </div>
                             </div>
@@ -63,14 +60,14 @@ const Courses = ({ events }) => {
                         <Events lang={"en"} events={events} />
                     </div>
                 </section>
-                <section>
+                {/* <section>
                     <center>
                         <p style={{ marginTop: "3rem" }} className="p-small">
                             * This includes not only women, but also inter, nonbinary, trans
                             und agender persons.
                         </p>
                     </center>
-                </section>
+                </section> */}
             </Layout>
         </>
     );

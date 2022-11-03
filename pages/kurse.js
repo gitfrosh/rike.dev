@@ -22,28 +22,28 @@ const customStyles = {
 }
 
 const Kurse = ({ events }) => {
-    const [email, setEmail] = useState()
-    const [modalIsOpen, setModalIsOpen] = useState(false)
-    const [callback, setCallback] = useState(false)
+    // const [email, setEmail] = useState()
+    // const [modalIsOpen, setModalIsOpen] = useState(false)
+    // const [callback, setCallback] = useState(false)
 
-    const submitForm = (e) => {
-        e.preventDefault()
-        submit(email, setCallback)
-    }
+    // const submitForm = (e) => {
+    //     e.preventDefault()
+    //     submit(email, setCallback)
+    // }
 
-    const openModal = () => {
-        setModalIsOpen(true)
-    }
+    // const openModal = () => {
+    //     setModalIsOpen(true)
+    // }
 
-    const changeEmail = (e) => {
-        setEmail(e.target.value)
-    }
+    // const changeEmail = (e) => {
+    //     setEmail(e.target.value)
+    // }
 
-    const closeModal = () => {
-        setModalIsOpen(false)
-        setEmail(undefined)
-        setCallback(undefined)
-    }
+    // const closeModal = () => {
+    //     setModalIsOpen(false)
+    //     setEmail(undefined)
+    //     setCallback(undefined)
+    // }
 
     return (
         <>
@@ -54,7 +54,7 @@ const Kurse = ({ events }) => {
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
-                    content="Kurse für Interessierte im Bereich Webentwicklung, Programmierung, Web3 und Blockchain."
+                    content="Workshops & Talks im Bereich Webentwicklung, Programmierung, Frontend, Web3 und Blockchain."
                 />
             </Head>
             <Layout>
@@ -81,10 +81,8 @@ const Kurse = ({ events }) => {
                                 <div className="col align-self-center description">
                                     <h5>Web Development und Web3</h5>
                                     <p>
-                                        Du hast Lust, dich im Bereich Programmierung,
-                                        Web-Entwicklung oder Web3 / Blockchain weiterzubilden, aber weißt nicht, wo
-                                        du anfangen sollst? Ich biete in unregelmäßigen Abständen Kurse, Workshops
-                                        und Talks für Interessierte und Anfängerinnen* an.
+                                        Ich biete in unregelmäßigen Abständen Kurse, Workshops
+                                        und Talks zu den Themen Web Development, React, Frontend, Web3 & Blockchain an.
                                     </p>
                                 </div>                                <div class="col-sm-4">
 
@@ -123,16 +121,16 @@ const Kurse = ({ events }) => {
                         <Events lang={'de'} events={events} />
                     </div>
                 </section>
-                <section>
+                {/* <section>
                     <center>
                         <p style={{ marginTop: '3rem' }} className="p-small">
                             * Die Zielgruppe schließt ein: Frauen, inter, nichtbinär, trans
                             und agender Personen.
                         </p>
                     </center>
-                </section>
+                </section> */}
             </Layout>
-            <Modal
+            {/* <Modal
                 isOpen={modalIsOpen}
                 style={customStyles}
                 contentLabel="Example Modal"
@@ -211,7 +209,7 @@ const Kurse = ({ events }) => {
                         )}
                     </div>
                 </section>
-            </Modal>
+            </Modal> */}
         </>
     )
 }
