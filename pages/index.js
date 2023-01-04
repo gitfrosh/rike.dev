@@ -4,6 +4,8 @@ import PageTitleHome from "../blocks/page-title/PageTitleHome";
 import Blog from "../components/blog/blog";
 import Projects from "../components/projects/Projects";
 import Contacts from "../blocks/contacts/Contacts";
+import Consult from "../blocks/consult/consult";
+
 import { fetchEntries } from "../util/cms";
 import Head from "next/head";
 
@@ -27,6 +29,7 @@ const RootIndex = ({ posts }) => {
         <Projects />
         <br />
         <Blog posts={posts} />
+        <Consult />
       </Layout>
     </>
   );

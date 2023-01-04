@@ -106,6 +106,16 @@ const MenuModal = () => {
                                         (location?.pathname === "/web3" ? " current-menu-item" : "")
                                     }
                                 >
+                                    <a target={"_blank"} title="Consulting" href={"https://cal.com/rikecodes"}>
+                                        Consult me
+                                    </a>
+                                </li>
+                                <li
+                                    className={
+                                        "menu-item" +
+                                        (location?.pathname === "/web3" ? " current-menu-item" : "")
+                                    }
+                                >
                                     <Link title="Web3" href={"/web3"}>
                                         Web3
                                     </Link>
