@@ -59,15 +59,7 @@ const PageTitleHome = () => {
                                 >
                                     IAV
                                 </a>
-                                , currently diving into everything Web3 @
-                                <a
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://twitter.com/womenbuildweb3"
-                                >
-                                    WBW3
-                                </a>
-                                . Check out upcoming coding workshops and talks{" "}
+                                , currently diving into dApps & ReFi. Check out upcoming coding workshops and talks{" "}
                                 <Link href={lang === "de" ? "/kurse" : "/courses"}>here.</Link>
                             </p>
                         </div>
