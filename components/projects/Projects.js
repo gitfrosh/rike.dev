@@ -19,9 +19,9 @@ const Projects = () => {
 
             {
                 "id": "3",
-                "title": "New WORDLE on the block",
-                "description": "The Wordle that gives back: Mint your daily result!",
-                "url": "https://wordle-on-the-block.on.fleek.co/",
+                "title": "ColorHueState",
+                "description": "ColorHueState (CHS) is an on-chain image machine rendering the heartbeat of the Ethereum blockchain.",
+                "url": "https://colorhuestate.xyz/",
             },
             {
                 "id": "4",
