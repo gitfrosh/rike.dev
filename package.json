@@ -18,7 +18,7 @@
     "dayjs": "^1.11.2",
     "fontsource-roboto": "^4.0.0",
     "fontsource-roboto-mono": "^4.0.0",
-    "next": "^13.4.19",
+    "next": "^13.4.2",
     "next-sitemap": "^2.5.24",
     "react": "^18.2.0",
     "react-addons-css-transition-group": "^15.6.2",
