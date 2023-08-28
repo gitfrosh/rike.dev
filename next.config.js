@@ -15,11 +15,14 @@ module.exports = withBundleAnalyzer({
   //   ],
   //   formats: ['image/avif', 'image/webp']
   // },
-  reactStrictMode: true,
+  reactStrictMode: false,
   // webpack5: true,import ReactGA from 'react-ga';
 
   webpack: (config) => {
     config.resolve.fallback = { dns: false, fs: false, net: false, tls: false, http2: false, dgram: false };
     return config;
+  },
+  experimental: {
+    appDir: false,
   },
 });
