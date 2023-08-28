@@ -3,7 +3,7 @@ import * as Scroll from "react-scroll";
 import Fader from "react-fader";
 import Link from "next/link";
 let scroll = Scroll.animateScroll;
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { getBrowserLanguage } from "../../util/helpers";
 import rike from "../../images/rike_exner.jpg";
 

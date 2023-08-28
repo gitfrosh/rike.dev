@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import web3 from "../images/web3.png";
 import Head from "next/head";
 

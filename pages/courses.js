@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Events from "../components/events/events";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { fetchEvents } from "../util/cms";
 import workshops from "../images/workshops.png";
 import Head from "next/head";
