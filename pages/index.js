@@ -18,7 +18,7 @@ const RootIndex = ({ posts }) => {
         <meta
           name="description"
           content="I'm Ulrike Exner (or just Rike), frontend developer from Berlin, hosting
-       workshops for coding beginners."
+       workshops and spe."
         />
       </Head>
       <Layout>
@@ -26,7 +26,7 @@ const RootIndex = ({ posts }) => {
         <Contacts />
         <Projects />
         <br />
-        <Blog posts={posts} />
+        {/* <Blog posts={posts} /> */}
       </Layout>
     </>
   );

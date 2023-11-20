@@ -3,7 +3,7 @@ import React from 'react';
 const Copyright = () => {
     return (
         <div className="copyright">
-            <p>© 2022 rike.dev</p>
+            <p>© {new Date().getFullYear()} rike.dev</p>
         </div>
     );
 };

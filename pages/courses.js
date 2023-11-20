@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Events from "../components/events/events";
 import Image from "next/legacy/image";
 import { fetchEvents } from "../util/cms";
-import workshops from "../images/workshops.png";
+import workshops from '../images/rike_exner-systain3r.jpg';
 import Head from "next/head";
 
 const Courses = ({ events }) => {
@@ -40,15 +40,18 @@ const Courses = ({ events }) => {
                                     </div>
                                 </div>
 
-                                <div className="col align-self-center description">
+                                <div className="col description">
                                     <h4>
-                                        Web development & Web3
+                                        Web development, agile methods & disruptive tech
                                     </h4>
 
                                     <p>
                                         I'm hosting workshops, talks, and
-                                        extensive training in German or English at irregular
-                                        intervals, and cover topics such as Web development, React, Frontend, Web3, and Blockchain.
+                                        extensive trainings in German or English at irregular
+                                        intervals, and cover topics such as Web development, React, Frontend tech, agile methods, Web3, and Blockchain.
+                                    </p>
+                                    <p>
+                                        &#11166; <a href="mailto: hello@rike.dev">Request as speaker / trainer</a>
                                     </p>
                                 </div>
                             </div>

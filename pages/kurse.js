@@ -4,7 +4,7 @@ import Events from '../components/events/events'
 import Modal from 'react-modal'
 import { submit } from '../util/helpers'
 import { fetchEvents } from '../util/cms'
-import workshops from '../images/workshops.png'
+import workshops from '../images/rike_exner-systain3r.jpg';
 import Image from "next/legacy/image"
 import Head from 'next/head'
 import Link from 'next/link'
@@ -78,11 +78,14 @@ const Kurse = ({ events }) => {
                                     </div>
                                 </div>
 
-                                <div className="col align-self-center description">
-                                    <h5>Web Development und Web3</h5>
+                                <div className="col description">
+                                    <h5>Web Development, agile Methoden und disruptive Technologien</h5>
                                     <p>
                                         Ich biete in unregelmäßigen Abständen Kurse, Workshops
-                                        und Talks zu den Themen Web Development, React, Frontend, Web3 & Blockchain an.
+                                        und Talks zu den Themen Web Development, React, Frontend, Agilität, Web3 & Blockchain an.
+                                    </p>
+                                    <p>
+                                        &#11166; <a href="mailto: hello@rike.dev">Anfragen als Speaker / Trainer</a>
                                     </p>
                                 </div>                                <div class="col-sm-4">
 
