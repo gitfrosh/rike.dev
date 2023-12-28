@@ -51,7 +51,7 @@ const PageTitleHome = () => {
                     <div className="spacer p-top-lg">
                         <p style={{ fontSize: "3rem", color: "#2b2b2b" }}>
                             <b>I'm Ulrike (or Rike).</b></p>
-                        <p style={{ fontSize: "1.7rem" }} className="p-large w-75">— as a cloud developer at{' '}
+                        <p style={{ fontSize: "1.7rem" }} className="p-large w-75">— as a software developer at{' '}
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
