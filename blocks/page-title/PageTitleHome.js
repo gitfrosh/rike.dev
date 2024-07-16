@@ -51,7 +51,7 @@ const PageTitleHome = () => {
                     <div className="spacer p-top-lg">
                         <p style={{ fontSize: "3rem", color: "#2b2b2b" }}>
                             <b>I'm Ulrike (or Rike).</b></p>
-                        <p style={{ fontSize: "1.7rem" }} className="p-large w-75">— as a software developer at{' '}
+                        <p style={{ fontSize: "1.7rem" }} className="p-large w-75">— as a consultant & software engineer at{' '}
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const PageTitleHome = () => {
                             </a> and <Link href="/courses">tech educator</Link>{' '}
                             based in Berlin,
                             I'm passionate about creating <b>intuitive, user-focused software solutions</b> through
-                            team collaboration and disruptive technologies. Beyond my development work,
+                            team collaboration and disruptive technologies. My expertise spans <b>cloud technologies</b> and <b>web3/blockchain</b>, ensuring we stay ahead in the rapidly evolving tech landscape. Beyond my development work,
                             I'm committed to sharing my knowledge and passion through <b>talks
                                 and trainings</b>.</p>  <p style={{ fontSize: "1.7rem" }} className="p-large w-75"> I believe in the power of <b>agile methodologies to drive innovation</b>
                             {' '}and adapt to the ever-changing landscape of technology. Join me as we build not
