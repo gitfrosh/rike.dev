@@ -62,8 +62,7 @@ const PageTitleHome = () => {
                             based in Berlin,
                             I'm passionate about creating <b>intuitive, user-focused software solutions</b> through
                             team collaboration and disruptive technologies. My expertise spans <b>cloud technologies</b> and <b>web3/blockchain</b>, ensuring we stay ahead in the rapidly evolving tech landscape. Beyond my development work,
-                            I'm committed to sharing my knowledge and passion through <b>talks
-                                and trainings</b>.</p>  <p style={{ fontSize: "1.7rem" }} className="p-large w-75"> I believe in the power of <b>agile methodologies to drive innovation</b>
+                            I'm committed to sharing my knowledge and passion through <b>talks, trainings and coaching</b>.</p>  <p style={{ fontSize: "1.7rem" }} className="p-large w-75"> I believe in the power of <b>agile methodologies to drive innovation</b>
                             {' '}and adapt to the ever-changing landscape of technology. Join me as we build not
                             just great tech, but also to cultivate a
                             {' '}<b>dynamic and inclusive tech community</b>.

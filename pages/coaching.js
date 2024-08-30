@@ -86,7 +86,6 @@ const Kurse = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="tidycal-embed" data-path="ulrike-exner/30-minute-meeting"></div><script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
                         {/* <br />
                         <br />
                         <br /> */}
