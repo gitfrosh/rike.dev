@@ -83,7 +83,21 @@ const MenuModal = () => {
                                         Home
                                     </Link>
                                 </li>
-
+                                {lang === "de" && <li
+                                    className={
+                                        "menu-item" +
+                                        (location?.pathname === "/coaching"
+                                            ? " current-menu-item"
+                                            : "")
+                                    }
+                                >
+                                    <Link
+                                        title={"Coaching"}
+                                        href={"/coaching"}
+                                    >
+                                        {"Coaching"}
+                                    </Link>
+                                </li>}
                                 <li
                                     className={
                                         "menu-item" +
@@ -100,7 +114,7 @@ const MenuModal = () => {
                                         {lang === "de" ? "Kurse" : "Courses"}
                                     </Link>
                                 </li>
-                                <li
+                                {/* <li
                                     className={
                                         "menu-item" +
                                         (location?.pathname === "/web3" ? " current-menu-item" : "")
@@ -109,7 +123,7 @@ const MenuModal = () => {
                                     <Link title="Web3" href={"/web3"}>
                                         Web3
                                     </Link>
-                                </li>
+                                </li> */}
 
                                 <li
                                     className={

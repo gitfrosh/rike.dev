@@ -1,49 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Layout from '../components/layout'
 import Events from '../components/events/events'
-import Modal from 'react-modal'
-import { submit } from '../util/helpers'
 import { fetchEvents } from '../util/cms'
 import workshops from '../images/rike_exner-systain3r.jpg';
 import Image from "next/legacy/image"
 import Head from 'next/head'
-import Link from 'next/link'
-
-const customStyles = {
-    content: {
-        zIndex: 2,
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-    },
-}
 
 const Kurse = ({ events }) => {
-    // const [email, setEmail] = useState()
-    // const [modalIsOpen, setModalIsOpen] = useState(false)
-    // const [callback, setCallback] = useState(false)
 
-    // const submitForm = (e) => {
-    //     e.preventDefault()
-    //     submit(email, setCallback)
-    // }
-
-    // const openModal = () => {
-    //     setModalIsOpen(true)
-    // }
-
-    // const changeEmail = (e) => {
-    //     setEmail(e.target.value)
-    // }
-
-    // const closeModal = () => {
-    //     setModalIsOpen(false)
-    //     setEmail(undefined)
-    //     setCallback(undefined)
-    // }
 
     return (
         <>

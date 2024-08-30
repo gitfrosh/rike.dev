@@ -61,7 +61,7 @@ const Events = ({ lang, events }) => {
                         <h5>
                             <span className="line">{item.type}</span>{" "}
                             {item.link ? (
-                                <a
+                                <Link
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     href={`${item.link}/`}
@@ -71,7 +71,7 @@ const Events = ({ lang, events }) => {
                                             ? item.titleDe
                                             : item.titleEn
                                         : item.titleEn}
-                                </a>
+                                </Link>
                             ) : lang === "de" ? (
                                 item.titleDe ? (
                                     item.titleDe
@@ -126,11 +126,9 @@ const Events = ({ lang, events }) => {
                                     </span>
                                 ) : (
                                     <Link passHref style={{ color: "#fff" }} href={item.link}>
-                                        <a target="_blank" rel="noopener noreferrer">
-                                            <button className="btn btn-xs has-text-color has-white-color has-background has-red-background-color">
-                                                {lang === "de" ? "Jetzt anmelden!" : "Sign up now!"}
-                                            </button>
-                                        </a>
+                                        <button className="btn btn-xs has-text-color has-white-color has-background has-red-background-color">
+                                            {lang === "de" ? "Jetzt anmelden!" : "Sign up now!"}
+                                        </button>
                                     </Link>
                                 ))}
                         </p>
