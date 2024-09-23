@@ -83,7 +83,7 @@ const MenuModal = () => {
                                         Home
                                     </Link>
                                 </li>
-                                {lang === "de" && <li
+                                {/* {lang === "de" && <li
                                     className={
                                         "menu-item" +
                                         (location?.pathname === "/coaching"
@@ -97,7 +97,7 @@ const MenuModal = () => {
                                     >
                                         {"Coaching"}
                                     </Link>
-                                </li>}
+                                </li>} */}
                                 <li
                                     className={
                                         "menu-item" +
