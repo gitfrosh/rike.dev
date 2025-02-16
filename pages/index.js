@@ -11,20 +11,19 @@ const RootIndex = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>rike.dev - Web development and beyond | Ulrike Exner</title>
+        <title>rike.dev | Ulrike Exner</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="canonical" href={"https://rike.dev"} />
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
-          content="I'm Ulrike Exner (or just Rike), frontend developer from Berlin, hosting
-       workshops and spe."
+          content="I'm Ulrike Exner, cloud consultant & engineer from Berlin"
         />
       </Head>
       <Layout>
         <PageTitleHome />
         <Contacts />
-        <Projects />
+        {/* <Projects /> */}
         <br />
         {/* <Blog posts={posts} /> */}
       </Layout>

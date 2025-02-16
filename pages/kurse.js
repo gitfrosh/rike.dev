@@ -12,13 +12,13 @@ const Kurse = ({ events }) => {
     return (
         <>
             <Head>
-                <title>rike.dev - Webentwicklung & Web3: Workshops</title>
+                <title>rike.dev - Workshops & Speaking</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="canonical" href={'https://rike.dev/kurse/'} />
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
-                    content="Workshops & Talks im Bereich Webentwicklung, Programmierung, Frontend, Web3 und Blockchain."
+                    content="Workshops & Talks im Bereich Cloud, Software, Web3 und Agilität."
                 />
             </Head>
             <Layout>
@@ -43,10 +43,10 @@ const Kurse = ({ events }) => {
                                 </div>
 
                                 <div className="col description">
-                                    <h5>Web Development, agile Methoden und disruptive Technologien</h5>
+                                    <h5>Cloud Strategy & Engineering, agile Methoden und disruptive Technologien</h5>
                                     <p>
                                         Ich biete in unregelmäßigen Abständen Kurse, Workshops
-                                        und Talks zu den Themen Web Development, React, Frontend, Agilität, Web3 & Blockchain an.
+                                        und Talks zu den Themen Cloud, Devops; Web Engineering, Web3 & Blockchain an.
                                     </p>
                                     <p>
                                         &#11166; <a href="mailto: hello@rike.dev">Anfragen als Speaker / Trainer</a>
