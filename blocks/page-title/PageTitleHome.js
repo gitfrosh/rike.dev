@@ -51,16 +51,16 @@ const PageTitleHome = () => {
                     <div className="spacer p-top-lg">
                         <p style={{ fontSize: "3rem", color: "#2b2b2b" }}>
                             <b>I'm Ulrike (or Rike).</b></p>
-                        <p style={{ fontSize: "1.7rem" }} className="p-large w-75">— as a consultant & software engineer at{' '}
+                        <p style={{ fontSize: "1.7rem" }} className="p-large w-75">— as a Managing Cloud Consultant & Engineer at{' '}
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://www.iav.com/"
+                                href="https://www.ey.com/"
                             >
-                                IAV
+                                EY
                             </a> and <Link href="/courses">tech educator</Link>{' '}
                             based in Berlin,
-                            I'm passionate about creating <b>intuitive, user-focused software solutions</b> through
+                            I'm passionate about creating <b>sustainable cloud solutions</b> through
                             team collaboration and disruptive technologies. My expertise spans <b>cloud technologies</b> and <b>web3/blockchain</b>, ensuring we stay ahead in the rapidly evolving tech landscape. Beyond my development work,
                             I'm committed to sharing my knowledge and passion through <b>talks, trainings and coaching</b>.</p>  <p style={{ fontSize: "1.7rem" }} className="p-large w-75"> I believe in the power of <b>agile methodologies to drive innovation</b>
                             {' '}and adapt to the ever-changing landscape of technology. Join me as we build not
