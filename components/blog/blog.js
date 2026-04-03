@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import LoadMoreButton from '../loadmore/LoadMore'
 import Link from 'next/link'
-import CSSTransitionGroup from 'react-addons-css-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { getBrowserLanguage } from '../../util/helpers';
 import dayjs from "dayjs";
 import localizedFormat from 'dayjs/plugin/localizedFormat'
@@ -59,49 +59,46 @@ const Blog = ({ posts }) => {
                     <span className="row smooth-resize gutter-width-lg with-pb-lg">
                         {!filteredPosts?.length && <div className="wrapper">
                             <div className="ptb-blog text-center"><span>No items.</span></div></div>}
-                        <CSSTransitionGroup
-                            transitionName="example"
-                            className="row smooth-resize gutter-width-lg with-pb-lg"
-                            transitionAppear={true}
-                            transitionEnter={true}
-                            transitionLeave={true}
-                            transitionAppearTimeout={100}
-                            transitionEnterTimeout={600}
-                            transitionLeaveTimeout={800}>
+                        <TransitionGroup
+                            className="row smooth-resize gutter-width-lg with-pb-lg">
                             {
-
                                 filteredPosts?.map((item, key) => {
                                     return (
-                                        <div
+                                        <CSSTransition
                                             key={item.title}
-                                            className="example col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12"
+                                            classNames="example"
+                                            appear={true}
+                                            timeout={{ appear: 100, enter: 600, exit: 800 }}
                                         >
-                                            <div className="card border-0">
-                                                <div className="card-body p-0">
-                                                    <h4>
-                                                        <Link href={`/blog/${item.slug}/`}>
-                                                            {item.title}
-                                                        </Link>
-                                                    </h4>
+                                            <div
+                                                className="example col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12"
+                                            >
+                                                <div className="card border-0">
+                                                    <div className="card-body p-0">
+                                                        <h4>
+                                                            <Link href={`/blog/${item.slug}/`}>
+                                                                {item.title}
+                                                            </Link>
+                                                        </h4>
 
-                                                    <p className="p-small text-secondary bold">
-                                                        {dayjs(item.publishedAt).format('LL')}
-                                                    </p>
+                                                        <p className="p-small text-secondary bold">
+                                                            {dayjs(item.publishedAt).format('LL')}
+                                                        </p>
 
-                                                    <p
-                                                        className="text"
-                                                        dangerouslySetInnerHTML={{
-                                                            __html: `${item.description}`,
-                                                        }}
-                                                    />
+                                                        <p
+                                                            className="text"
+                                                            dangerouslySetInnerHTML={{
+                                                                __html: `${item.description}`,
+                                                            }}
+                                                        />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </CSSTransition>
                                     )
-                                }
-                                )
+                                })
                             }
-                        </CSSTransitionGroup>
+                        </TransitionGroup>
                     </span>
 
                     <div className="text-center">

@@ -67,7 +67,10 @@ const Legal = ({ location }) => {
                     <section id="page-content" className="block spacer p-top-lg">
                         <div className="wrapper">
                             <p>
-                                Ulrike Exner, Wichertstr. 30a, 10439 Berlin, Germany
+                                Ulrike Exner<br />
+                                c/o IP-Management #9564 <br />
+                                Ludwig-Erhard-Str. 18<br />
+                                20459 Hamburg<br />
                                 <br />
                                 Email: hello[at] rike.dev
                                 <br />
