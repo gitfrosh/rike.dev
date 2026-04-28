@@ -1,40 +1,30 @@
-import React from "react";
-import Layout from "../components/layout";
-import PageTitle404 from "../blocks/page-title/PageTitle404";
-import BackToHome from "../components/button/BackToHome";
 import Head from "next/head";
+import Link from "next/link";
+import Layout from "../components/Layout";
 
-class Page404 extends React.Component {
-    render() {
-        return (
-            <>
-                <Head>
-                    <title>rike.dev - 404</title>
-                    <link rel="manifest" href="/manifest.json" />
-                    <meta
-                        name="viewport"
-                        content="initial-scale=1.0, width=device-width"
-                    />
-                </Head>
-                <Layout>
-                    <PageTitle404 />
+const Page404 = () => (
+  <>
+    <Head>
+      <title>rike.dev — 404</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="manifest" href="/manifest.json" />
+    </Head>
 
-                    <div id="page-content" className="block">
-                        <div className="wrapper">
-                            <p className="spacer p-top-lg w-50 m-0">
-                                The page you were looking for couldn't be found. The page could
-                                be removed, sorry :(.
-                            </p>
-
-                            <div className="spacer p-top-xs d-xl-flex d-lg-flex d-md-flex justify-content-between block m-top-extrasmall">
-                                <BackToHome />
-                            </div>
-                        </div>
-                    </div>
-                </Layout>
-            </>
-        );
-    }
-}
+    <Layout>
+      <section className="page">
+        <div className="container">
+          <h1 className="title">Not found.</h1>
+          <div className="prose">
+            <p>The page you were looking for couldn't be found.</p>
+            <p>
+              <Link href="/">← Back to the homepage</Link>
+            </p>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  </>
+);
 
 export default Page404;

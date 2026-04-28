@@ -1,203 +1,72 @@
+# Old kurse / courses paths -> homepage talks section
 [[redirects]]
-  from = "/wave/*"
-  to = "https://fervent-galileo-636f72.netlify.app/:splat"
-  status = 200
-
-
-[[redirects]]
-  from = "/bots"
-  to = "/2021/06/08/how-to-build-a-friendly-social-bot/"
+  from = "/kurse"
+  to = "/#talks"
   status = 301
 
 [[redirects]]
-  from = "/tutorial-2021"
-  to = "/2018/07/15/node-js-installieren-und-einen-webserver-starten/"
+  from = "/kurse/*"
+  to = "/#talks"
   status = 301
 
 [[redirects]]
-  from = "/python-tutorial-2021"
-  to = "/2021/26/08/mit-dem-terminal-arbeiten-und-python-installieren/"
+  from = "/courses"
+  to = "/#talks"
   status = 301
 
 [[redirects]]
-  from = "/kurse/gratis"
-  to = "/kurse/"
+  from = "/courses/*"
+  to = "/#talks"
   status = 301
 
+# Legacy contact path
 [[redirects]]
-  from = "/kurse/webentwicklerin-werden"
-  to = "/kurse/"
+  from = "/contact"
+  to = "/#contact"
   status = 301
 
+# Legacy blog URLs -> homepage (blog removed)
 [[redirects]]
-  from = "/kurse/dein-weg-in-die-webentwicklung"
-  to = "/kurse/"
-  status = 301
-
-[[redirects]]
-  from = "/kurse/ueber-mich"
+  from = "/blog/*"
   to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/blog"
+  from = "/2015/*"
   to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/kontakt"
-  to = "/contact/"
+  from = "/2016/*"
+  to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/gratis-webinar"
-  to = "/kurse/"
+  from = "/2017/*"
+  to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/roadmap"
-  to = "/kurse/"
+  from = "/2018/*"
+  to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/newsletter"
-  to = "/kurse/"
+  from = "/2019/*"
+  to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/rike.dev-Roadmap.pdf"
-  to = "/rike.dev-Roadmap.pdf"
+  from = "/2020/*"
+  to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/rike.dev-Webinar.pdf"
-  to = "/rike.dev-Webinar.pdf"
+  from = "/2021/*"
+  to = "/"
   status = 301
 
 [[redirects]]
-  from = "/kurse/rike.dev-Syllabus.pdf"
-  to = "/kurse/"
-  status = 301
-
-[[redirects]]
-  from = "/kurse/xPuezr6542"
-  to = "/xPuezr6542/"
-  status = 301
-
-  [[redirects]]
-  from = "/kurse/kostenloses-erstgespraech"
-  to = "/kurse/"
-  status = 301
-
-  [[redirects]]
-  from = "/kurse/buchungsseite"
-  to = "/kurse/"
-  status = 301
-  
-  [[redirects]]
-  from = "/kurse/replay"
-  to = "/kurse/"
-  status = 301
-  
-  [[redirects]]
-  from = "/2022/19/03/hack-the-web3-building-a-worlde-on-the-blockchain*"
-  to = "/2022/19/03/hack-the-web3-building-a-wordle-on-the-blockchain/"
-  status = 301
-
-  
- # switch to next and new url structure
-
-  [[redirects]]
-  from = "/2022/19/03/hack-the-web3-building-a-wordle-on-the-blockchain/"
-  to = "/blog/hack-the-web3-building-a-wordle-on-the-blockchain"
-  status = 301
-
-  [[redirects]]
-  from = "/2019/02/11/smart-home-setup-to-track-indoor-temperatures-and-humidity-with-sensors-raspberry-pi-mqtt-node-js-vue-js-and-chart-js/"
-  to = "/blog/hack-the-web3-building-a-wordle-on-the-blockchain/"
-  status = 301
-
-  [[redirects]]
-  from = "/2019/02/11/hardware-sensors-receiver-raspberry-pi-for-a-basic-tracking-tool-on-temperature-and-humidity/"
-  to = "/blog/hardware-sensors-receiver-raspberry-pi-for-a-basic-tracking-tool-on-temperature-and-humidity/"
-  status = 301
-
-  [[redirects]]
-  from = "/2019/02/11/display-smart-home-data-in-a-quasar-vue-js-and-chart-js-powered-web-application/"
-  to = "/blog/display-smart-home-data-in-a-quasar-vue-js-and-chart-js-powered-web-application/"
-  status = 301
-
-  [[redirects]]
-  from = "/2019/02/07/smart-home-sensor-data-with-mqtt-broker-mosquitto-and-a-node-js-backend-application/"
-  to = "/blog/smart-home-sensor-data-with-mqtt-broker-mosquitto-and-a-node-js-backend-application/"
-  status = 301
-
-    [[redirects]]
-  from = "/2019/04/20/get-a-csv-download-out-of-postgresql-or-lowdb-database-on-node-js/"
-  to = "/blog/get-a-csv-download-out-of-postgresql-or-lowdb-database-on-node-js/"
-  status = 301
-
-  [[redirects]]
-  from = "/2020/06/19/headless-api-first-wtf-how-i-left-wordpress-and-built-my-own-content-management-system/"
-  to = "/blog/headless-api-first-wtf-how-i-left-wordpress-and-built-my-own-content-management-system/"
-  status = 301
-
- [[redirects]]
-  from = "/2019/04/20/setup-postgresql-database-and-api-for-node-js/"
-  to = "/blog/setup-postgresql-database-and-api-for-node-js/"
-  status = 301
-
-[[redirects]]
-  from = "/2019/06/26/how-to-build-a-twitter-bot-with-node-js-fast/"
-  to = "/blog/how-to-build-a-twitter-bot-with-node-js-fast/"
-  status = 301
-
- [[redirects]]
-  from = "/2016/06/13/die-clippy-die-intelligent-personal-assistants/"
-  to = "/blog/die-clippy-die-intelligent-personal-assistants/"
-  status = 301
-
- [[redirects]]
-  from = "/2015/12/02/mobile-banking-altersgruppenspezifisch/"
-  to = "/blog/mobile-banking-altersgruppenspezifisch/"
-  status = 301
-
- [[redirects]]
-  from = "/2017/06/01/nutzerzentrierte-entwicklung-eines-prototypischen-web-monitoring-tools/"
-  to = "/blog/nutzerzentrierte-entwicklung-eines-prototypischen-web-monitoring-tools/"
-  status = 301
-
- [[redirects]]
-  from = "/2021/05/04/rest-apis-for-absolute-beginners/"
-  to = "/blog/rest-apis-for-absolute-beginners/"
-  status = 301
-
- [[redirects]]
-  from = "/2021/06/08/how-to-build-a-friendly-social-bot/"
-  to = "/blog/how-to-build-a-friendly-social-bot/"
-  status = 301
-
- [[redirects]]
-  from = "/2021/26/08/mit-dem-terminal-arbeiten-und-python-installieren/"
-  to = "/blog/mit-dem-terminal-arbeiten-und-python-installieren/"
-  status = 301
-
-[[redirects]]
-  from = "/2018/07/15/node-js-installieren-und-einen-webserver-starten/"
-  to = "/blog/node-js-installieren-und-einen-webserver-starten/"
-  status = 301
-
- [[redirects]]
-  from = "/2021/08/26/einen-einfachen-webserver-mit-python-installieren/"
-  to = "/blog/einen-einfachen-webserver-mit-python-installieren/"
-  status = 301
-
- [[redirects]]
-  from = "/2019/07/18/100daysofcode-a-recap/"
-  to = "/blog/100daysofcode-a-recap/"
-  status = 301
-
-[[redirects]]
-  from = "/2022/29/03/exploring-web3-safe-and-sound-starter-guide-not-only-for-software-developers/"
-  to = "/blog/exploring-web3-safe-and-sound-starter-guide-not-only-for-software-developers/"
+  from = "/2022/*"
+  to = "/"
   status = 301
