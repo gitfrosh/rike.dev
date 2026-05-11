@@ -28,6 +28,12 @@ const Home = () => {
               development woven in. On the side, I teach what I learn: workshops, talks,
               the occasional university lecture.
             </p>
+            <p className="now reveal">
+              Currently writing a Reader on tech topics —{" "}
+              <a href="https://reader.rike.dev" target="_blank" rel="noopener noreferrer">
+                reader.rike.dev<span className="now-arrow">&nbsp;→</span>
+              </a>
+            </p>
             <div className="actions reveal">
               <a href="#contact">Get in touch&nbsp;↗</a>
               <a href="#talks">Talks &amp; workshops</a>

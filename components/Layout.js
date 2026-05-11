@@ -9,6 +9,16 @@ const Nav = () => (
       <ul>
         <li><a href="/#work">Work</a></li>
         <li><a href="/#talks">Talks</a></li>
+        <li>
+          <a
+            href="https://reader.rike.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-reader"
+          >
+            Reader<span className="now-arrow">&nbsp;↗</span>
+          </a>
+        </li>
         <li><a href="/#contact">Contact</a></li>
       </ul>
     </div>
@@ -18,7 +28,17 @@ const Nav = () => (
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <span>© {new Date().getFullYear()} Ulrike Exner</span>
+      <div className="footer-left">
+        <span>© {new Date().getFullYear()} Ulrike Exner</span>
+        <a
+          className="footer-reader"
+          href="https://reader.rike.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reader on reader.rike.dev<span className="now-arrow">&nbsp;→</span>
+        </a>
+      </div>
       <ul>
         <li>
           <a href="https://github.com/gitfrosh/" target="_blank" rel="noopener noreferrer">

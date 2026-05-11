@@ -4,6 +4,7 @@
   --ink-soft: #6B6960;
   --rule: #DBD6CC;
   --accent: #7C989A;
+  --accent-red: #bb4242;
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -91,6 +92,10 @@ button {
   color: var(--ink-soft);
 }
 
+.nav .nav-reader:hover .now-arrow {
+  transform: translate(2px, -2px);
+}
+
 /* ---------- Hero ---------- */
 .hero {
   padding: 7rem 0 6rem;
@@ -119,6 +124,39 @@ button {
   font-style: italic;
   font-family: var(--font-display);
   font-weight: 400;
+}
+
+.hero .now {
+  max-width: 580px;
+  margin-top: -1.5rem;
+  margin-bottom: 2.75rem;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  font-weight: 300;
+  color: var(--ink);
+}
+
+.hero .now a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  white-space: nowrap;
+}
+
+.hero .now a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.now-arrow {
+  color: var(--accent-red);
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.hero .now a:hover .now-arrow,
+.footer .footer-reader:hover .now-arrow {
+  transform: translateX(3px);
 }
 
 .hero .actions {
@@ -287,6 +325,20 @@ section {
   letter-spacing: 0.02em;
 }
 
+.footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer .footer-reader {
+  color: var(--ink-soft);
+}
+
+.footer .footer-reader:hover {
+  color: var(--accent);
+}
+
 .footer ul {
   list-style: none;
   display: flex;
@@ -343,6 +395,7 @@ section {
 .reveal:nth-child(1) { animation-delay: 0.1s; }
 .reveal:nth-child(2) { animation-delay: 0.25s; }
 .reveal:nth-child(3) { animation-delay: 0.4s; }
+.reveal:nth-child(4) { animation-delay: 0.55s; }
 
 @keyframes reveal {
   to { opacity: 1; transform: translateY(0); }
@@ -358,6 +411,7 @@ section {
 
   .hero { padding: 4rem 0 3rem; }
   .hero .lede { font-size: 1.1rem; }
+  .hero .now { font-size: 1.1rem; margin-top: -1rem; margin-bottom: 2rem; }
   .hero .actions { gap: 1.25rem; flex-direction: column; align-items: flex-start; }
 
   section { padding: 3rem 0; }
