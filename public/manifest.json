@@ -1,10 +1,10 @@
 {
-    "name": "rike.dev - Web development & beyond",
+    "name": "rike.dev — Ulrike Exner",
     "short_name": "rike.dev",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#90cdf4",
-    "theme_color": "#90cdf4",
+    "background_color": "#F5F2ED",
+    "theme_color": "#F5F2ED",
     "orientation": "portrait-primary",
     "icons": [
         {
